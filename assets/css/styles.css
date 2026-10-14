@@ -1058,6 +1058,13 @@ body.dark-mode .border-indigo-subtle {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  .featured-insight-title {
+    min-height: 3.25rem;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.35;
+  }
 }
 /* Case Studies Grid (Case Studies Page) Symmetrical Alignment */
 #caseStudiesGrid > [class*="col-"] {
