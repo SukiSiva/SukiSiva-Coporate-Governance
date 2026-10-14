@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('governora_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          document.documentElement.classList.remove('dark');
+        }
+        var r = localStorage.getItem('governora_rtl');
+        if (r === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Governance & Board Advisory Practice | Governora - Corporate Governance & Compliance Advisory</title>
+  <meta name="description" content="Enterprise-grade corporate governance, board effectiveness, regulatory compliance, and risk advisory services.">
+  <!-- Favicon / Website Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      corePlugins: { preflight: false, collapse: false },
+      theme: {
+        extend: {
+          colors: {
+            govNavy: '#101D32',
+            govGold: '#C6A66B',
+            govDark: '#0A1220'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg gov-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <a class="gov-brand navbar-brand" href="index.html">
+        <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span>GOVERN<span class="gold">ORA</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#govNav" aria-controls="govNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="govNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="index.html"><i class="bi bi-building me-2"></i> Home 1  Corporate Advisory</a></li>
+              <li><a class="dropdown-item " href="home-2.html"><i class="bi bi-shield-lock me-2"></i> Home 2  Regulatory & Risk</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="blog.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <!-- Theme Switcher -->
+          <button class="gov-tool-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun"></i>
+          </button>
+          <!-- RTL Switcher -->
+          <button class="gov-tool-btn rtl-toggle-btn fw-bold" title="Switch to RTL Mode (Right-to-Left)" aria-label="Switch to RTL Mode">
+            <span class="dir-badge">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-gov-primary">
+            <span>Book Advisory</span>
+            <i class="bi bi-arrow-right icon-flip-rtl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<main>
+  <!-- Hero Section -->
+  <section class="hero-wrapper bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 border-bottom">
+    <div class="hero-bg-accent"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="gov-badge mb-3">
+            <i class="bi bi-award-fill"></i> Global Board Advisory & Assurance
+          </div>
+          <h1 class="hero-headline">
+            Institutional Governance, Fiduciary Integrity & Board Advisory
+          </h1>
+          <p class="hero-lead">
+            Governora advises multinational boards, general counsels, and audit committees on evolving regulatory standards, mitigating systemic enterprise risk, and architecting defensible compliance structures.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="contact.html" class="btn btn-gov-primary btn-lg">
+              <span>Schedule Board Consultation</span>
+              <i class="bi bi-calendar2-check"></i>
+            </a>
+            <a href="services.html" class="btn btn-gov-outline btn-lg">
+              <span>Explore Advisory Practices</span>
+              <i class="bi bi-arrow-right icon-flip-rtl"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-4 text-muted small pt-2">
+            <span><i class="bi bi-shield-check text-warning me-1"></i> Defensible Oversight</span>
+            <span><i class="bi bi-file-earmark-lock text-warning me-1"></i> Strict NDA Protocol</span>
+            <span><i class="bi bi-globe2 text-warning me-1"></i> Multi-Jurisdiction</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-image-frame mb-3">
+            <img src="assets/images/hero-1.jpg" alt="Executive Corporate Boardroom" class="img-fluid rounded shadow-lg w-100">
+          </div>
+          <div class="hero-badge-floating">
+            <div class="gov-brand-icon flex-shrink-0"><i class="bi bi-check2-circle"></i></div>
+            <div>
+              <div class="fw-bold fs-6">100% Audit Readiness</div>
+              <div class="small text-muted">SOX 404 & ISO 37000 Standards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Metrics & Company Statistics -->
+  <section class="py-5 bg-surface border-bottom">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3 gov-stat-item">
+          <div class="gov-stat-number" data-target="250" data-suffix="+">250+</div>
+          <div class="gov-stat-label">Enterprise Boards Advised</div>
+        </div>
+        <div class="col-6 col-md-3 gov-stat-item">
+          <div class="gov-stat-number" data-target="38" data-suffix="+">38+</div>
+          <div class="gov-stat-label">Regulatory Jurisdictions</div>
+        </div>
+        <div class="col-6 col-md-3 gov-stat-item">
+          <div class="gov-stat-number" data-target="99" data-suffix=".8%">99.8%</div>
+          <div class="gov-stat-label">Regulatory Audit Clearance</div>
+        </div>
+        <div class="col-6 col-md-3 gov-stat-item">
+          <div class="gov-stat-number" data-target="15" data-prefix="$" data-suffix="B+">$15B+</div>
+          <div class="gov-stat-label">Corporate Capital Protected</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Overview -->
+  <section class="py-5 my-md-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Core Advisory Practices</span>
+        <h2 class="section-title">Institutional Solutions For Complex Governance</h2>
+        <div class="gold-divider mx-auto"></div>
+        <p class="section-subtitle">
+          From committee charter overhauls to crisis compliance interventions, Governora delivers discrete, legally rigorous frameworks aligned with institutional expectations.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card">
+            <div class="gov-card-icon"><i class="bi bi-shield-shaded"></i></div>
+            <h3 class="gov-card-title">Corporate Governance Advisory</h3>
+            <p class="gov-card-text">Formulating comprehensive board constitutions, delegation protocols, executive committee frameworks, and fiduciary decision models.</p>
+            <div class="rounded overflow-hidden mb-3 mt-3">
+              <img src="assets/images/service-governance-advisory.jpg" alt="Corporate Governance Advisory" class="w-100 object-cover" style="height: 180px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="service-corporate-governance.html" class="gov-card-link mt-auto">Explore Practice <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card">
+            <div class="gov-card-icon"><i class="bi bi-person-check"></i></div>
+            <h3 class="gov-card-title">Board Effectiveness & Evaluation</h3>
+            <p class="gov-card-text">Independent, confidential assessments of board dynamics, peer evaluations, skill-matrix composition, and succession roadmaps.</p>
+            <div class="rounded overflow-hidden mb-3 mt-3">
+              <img src="assets/images/service-board-evaluation.jpg" alt="Board Effectiveness & Evaluation" class="w-100 object-cover" style="height: 180px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="service-board-evaluation.html" class="gov-card-link mt-auto">Explore Practice <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card">
+            <div class="gov-card-icon"><i class="bi bi-clipboard2-check"></i></div>
+            <h3 class="gov-card-title">Regulatory Compliance</h3>
+            <p class="gov-card-text">Cross-border regulatory alignment for SEC, FCA, ESMA, and corporate disclosure mandates with proactive gap analysis.</p>
+            <div class="rounded overflow-hidden mb-3 mt-3">
+              <img src="assets/images/service-regulatory-compliance.jpg" alt="Regulatory Compliance" class="w-100 object-cover" style="height: 180px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="service-regulatory-compliance.html" class="gov-card-link mt-auto">Explore Practice <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card">
+            <div class="gov-card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3 class="gov-card-title">Enterprise Risk Management</h3>
+            <p class="gov-card-text">Embedding COSO-aligned ERM mechanisms, defining board risk appetite statements, and implementing early-warning indicators.</p>
+            <div class="rounded overflow-hidden mb-3 mt-3">
+              <img src="assets/images/service-risk-management.jpg" alt="Enterprise Risk Management" class="w-100 object-cover" style="height: 180px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="service-risk-management.html" class="gov-card-link mt-auto">Explore Practice <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card">
+            <div class="gov-card-icon"><i class="bi bi-search"></i></div>
+            <h3 class="gov-card-title">Internal Controls & Audit Readiness</h3>
+            <p class="gov-card-text">SOX 404 readiness, internal control gap remediation, operational compliance forensics, and audit committee readiness.</p>
+            <div class="rounded overflow-hidden mb-3 mt-3">
+              <img src="assets/images/service-audit-readiness.jpg" alt="Internal Controls & Audit Readiness" class="w-100 object-cover" style="height: 180px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="service-audit-readiness.html" class="gov-card-link mt-auto">Explore Practice <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card">
+            <div class="gov-card-icon"><i class="bi bi-megaphone"></i></div>
+            <h3 class="gov-card-title">Ethics & Whistleblower Frameworks</h3>
+            <p class="gov-card-text">Independent reporting hotlines, anti-bribery policies (FCPA/UK Bribery Act), investigation escalation trees, and code of conduct.</p>
+            <div class="rounded overflow-hidden mb-3 mt-3">
+              <img src="assets/images/service-ethics-whistleblower.jpg" alt="Ethics & Whistleblower Frameworks" class="w-100 object-cover" style="height: 180px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="service-ethics-whistleblower.html" class="gov-card-link mt-auto">Explore Practice <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Governora -->
+  <section class="py-5 bg-surface border-top border-bottom">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-tag">Distinct Advisory Edge</span>
+          <h2 class="section-title">Why Global Enterprises Partner With Governora</h2>
+          <div class="gold-divider"></div>
+          <p class="text-muted mb-4">
+            In an era of relentless regulatory proliferation, governance is no longer passive complianceit is enterprise strategy. Governora brings experienced former regulators, corporate secretaries, and risk executives directly to your boardroom table.
+          </p>
+
+          <ul class="gov-checklist mb-4">
+            <li><strong>Former Regulators & Senior Counsel:</strong> Direct counsel from practitioners who have drafted enforcement guidelines.</li>
+            <li><strong>Methodology-Driven Frameworks:</strong> Fully customized documentation mapped directly to ISO 37000 and COSO standards.</li>
+            <li><strong>Strict Fiduciary Discretion:</strong> Ironclad non-disclosure standards, compartmentalized data vaults, and private counsel.</li>
+            <li><strong>Proactive Horizon Scanning:</strong> Forward-looking compliance monitoring to prevent statutory penalties and shareholder activist exposure.</li>
+          </ul>
+
+          <a href="about.html" class="btn btn-gov-primary">
+            <span>Learn About Our Practice</span>
+            <i class="bi bi-arrow-right icon-flip-rtl"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="gov-card p-4 p-lg-5 shadow-lg">
+            <h3 class="h4 fw-bold mb-4">Our Fiduciary Assurance Standard</h3>
+            <div class="mb-4 d-flex gap-3">
+              <div class="fs-2 text-warning"><i class="bi bi-award"></i></div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Peerless Evaluation Neutrality</h4>
+                <p class="small text-muted mb-0">Completely unbiased third-party board assessments fulfilling institutional shareholder voting guidelines.</p>
+              </div>
+            </div>
+            <div class="mb-4 d-flex gap-3">
+              <div class="fs-2 text-warning"><i class="bi bi-diagram-3"></i></div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Scalable Multi-Entity Architecture</h4>
+                <p class="small text-muted mb-0">Harmonizing subsidiaries across North America, the European Union, and Asia-Pacific under unified holding compliance.</p>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="fs-2 text-warning"><i class="bi bi-fingerprint"></i></div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Defensible Decision Documentation</h4>
+                <p class="small text-muted mb-0">Structuring board minutes, conflict disclosures, and committee resolutions to withstand judicial scrutiny.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulting Process / Approach -->
+  <section class="py-5 my-md-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Methodology</span>
+        <h2 class="section-title">The Four-Stage Advisory Protocol</h2>
+        <div class="gold-divider mx-auto"></div>
+        <p class="section-subtitle">A disciplined engagement cycle designed to minimize executive disruption while surfacing critical fiduciary exposures.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card text-center p-4">
+            <div class="fw-bold display-6 text-warning mb-2">01</div>
+            <h3 class="h5 fw-bold mb-2">Diagnostic Audit</h3>
+            <p class="small text-muted mb-0">Comprehensive inspection of existing board charters, committee minutes, compliance workflows, and regulatory filings.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card text-center p-4">
+            <div class="fw-bold display-6 text-warning mb-2">02</div>
+            <h3 class="h5 fw-bold mb-2">Exposure Mapping</h3>
+            <p class="small text-muted mb-0">Identification of statutory vulnerabilities, conflicts of interest, reporting siloes, and internal control weaknesses.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card text-center p-4">
+            <div class="fw-bold display-6 text-warning mb-2">03</div>
+            <h3 class="h5 fw-bold mb-2">Framework Blueprint</h3>
+            <p class="small text-muted mb-0">Delivery of bespoke governance codes, risk oversight mechanisms, compliance checklists, and board training.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card text-center p-4">
+            <div class="fw-bold display-6 text-warning mb-2">04</div>
+            <h3 class="h5 fw-bold mb-2">Ongoing Assurance</h3>
+            <p class="small text-muted mb-0">Quarterly fiduciary reviews, regulatory horizon scans, independent compliance monitoring, and annual board review.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Case Studies Preview -->
+  <section class="py-5 bg-surface border-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5">
+        <div>
+          <span class="section-tag">Proven Engagements</span>
+          <h2 class="section-title mb-0">Recent Illustrative Case Scenarios</h2>
+        </div>
+        <a href="case-studies.html" class="btn btn-gov-outline">
+          <span>View All Case Studies</span>
+          <i class="bi bi-arrow-right icon-flip-rtl"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card overflow-hidden p-0">
+            <img src="assets/images/case-1.jpg" alt="Financial Banking Advisory" class="w-100 object-cover" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning fw-semibold align-self-start mb-2">Banking & Capital Markets</span>
+              <h3 class="h5 fw-bold mb-2">Tier-1 Commercial Bank Regulatory Remediation</h3>
+              <p class="small text-muted mb-3 flex-grow-1">Restructured cross-border AML and compliance monitoring architecture following sudden cross-jurisdiction regulatory sanctions scrutiny.</p>
+              <div class="border-top pt-3 small text-secondary">
+                <strong>Outcome:</strong> 100% statutory clearance, 0 penalty enforcement.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card overflow-hidden p-0">
+            <img src="assets/images/case-2.jpg" alt="Hospital Network Board Restructuring & Ethics" class="w-100 object-cover" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info fw-semibold align-self-start mb-2">Healthcare Systems</span>
+              <h3 class="h5 fw-bold mb-2">Hospital Network Board Restructuring & Ethics</h3>
+              <p class="small text-muted mb-3 flex-grow-1">Instituted new fiduciary oversight protocols, clinical compliance escalation channels, and independent whistleblower protection across 42 facilities.</p>
+              <div class="border-top pt-3 small text-secondary">
+                <strong>Outcome:</strong> Enhanced compliance rating to AAA tier.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="gov-card overflow-hidden p-0">
+            <img src="assets/images/case-3.jpg" alt="Pre-IPO SaaS Governance & SOX 404 Readiness" class="w-100 object-cover" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-success-subtle text-success fw-semibold align-self-start mb-2">Enterprise Technology</span>
+              <h3 class="h5 fw-bold mb-2">Pre-IPO SaaS Governance & SOX 404 Readiness</h3>
+              <p class="small text-muted mb-3 flex-grow-1">Prepared high-growth tech enterprise for NYSE public listing via board independence design, audit committee charters, and internal financial controls.</p>
+              <div class="border-top pt-3 small text-secondary">
+                <strong>Outcome:</strong> Seamless IPO with clean unqualified auditor review.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="py-5 my-md-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Executive Testimonials</span>
+        <h2 class="section-title">Trusted By Corporate Leaders</h2>
+        <div class="gold-divider mx-auto"></div>
+        <p class="section-subtitle">Exemplary feedback from board chairs, non-executive directors, and corporate counsel.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="gov-testimonial-card h-100">
+            <div class="gov-quote-icon"><i class="bi bi-quote"></i></div>
+            <p class="gov-testimonial-text">
+              Governora provided our audit committee with an uncompromising, incisive review of our enterprise internal controls. Their former regulatory insights transformed our compliance stance from reactive defense to competitive asset.
+            </p>
+            <div class="gov-testimonial-author">
+              <img src="assets/images/avatar-1.jpg" alt="Arthur Sterling" class="gov-testimonial-avatar">
+              <div>
+                <h3 class="h6 fw-bold mb-0">Arthur Sterling</h3>
+                <small class="text-muted">Audit Committee Chair, Global Logistics PLC</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="gov-testimonial-card h-100">
+            <div class="gov-quote-icon"><i class="bi bi-quote"></i></div>
+            <p class="gov-testimonial-text">
+              The annual board evaluation facilitated by Governora set a new benchmark for candor and constructive governance. The resulting boardroom skills matrix directly influenced our executive succession triumphs.
+            </p>
+            <div class="gov-testimonial-author">
+              <img src="assets/images/avatar-2.jpg" alt="Eleanor Vance" class="gov-testimonial-avatar">
+              <div>
+                <h3 class="h6 fw-bold mb-0">Eleanor Vance, JD</h3>
+                <small class="text-muted">Senior Independent Director, FinTech Horizon</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="gov-testimonial-card h-100">
+            <div class="gov-quote-icon"><i class="bi bi-quote"></i></div>
+            <p class="gov-testimonial-text">
+              Their whistleblower and anti-bribery framework implementation was discrete, thorough, and compliant across all five of our operating jurisdictions in Europe and North America. Exceptional partner.
+            </p>
+            <div class="gov-testimonial-author">
+              <img src="assets/images/avatar-3.jpg" alt="Marcus Davenport" class="gov-testimonial-avatar">
+              <div>
+                <h3 class="h6 fw-bold mb-0">Marcus Davenport</h3>
+                <small class="text-muted">Chief Legal Officer, Apex Therapeutics</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Insights Preview -->
+  <section class="py-5 bg-surface border-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5">
+        <div>
+          <span class="section-tag">Thought Leadership</span>
+          <h2 class="section-title mb-0">Latest Governance & Compliance Briefings</h2>
+        </div>
+        <a href="blog.html" class="btn btn-gov-outline">
+          <span>Read All Insights</span>
+          <i class="bi bi-arrow-right icon-flip-rtl"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="gov-card p-4 d-flex flex-column h-100">
+            <span class="small text-warning fw-bold mb-1">SEC & EU Mandates &bull; Oct 2026</span>
+            <h3 class="h5 fw-bold mb-2"><a href="blog-details.html" class="text-reset text-decoration-none">Navigating 2027 Material Risk Disclosure Shifts</a></h3>
+            <p class="small text-muted mb-3 flex-grow-1">Analyzing cross-border divergence between SEC climate disclosure timelines and EU CSRD reporting obligations.</p>
+            <div class="rounded overflow-hidden mb-3">
+              <img src="assets/images/blog-1.jpg" alt="Regulatory Outlook" class="w-100 object-cover" style="height: 190px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="blog-details.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="gov-card p-4 d-flex flex-column h-100">
+            <span class="small text-warning fw-bold mb-1">Boardroom Strategy &bull; Sep 2026</span>
+            <h3 class="h5 fw-bold mb-2"><a href="blog-fiduciary-sustainability.html" class="text-reset text-decoration-none">Fiduciary Duties in Sustainability & Energy Transition</a></h3>
+            <p class="small text-muted mb-3 flex-grow-1">Practical guidelines for board directors to avert greenwashing litigation while maintaining investor confidence.</p>
+            <div class="rounded overflow-hidden mb-3">
+              <img src="assets/images/blog-2.jpg" alt="ESG Oversight" class="w-100 object-cover" style="height: 190px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="blog-fiduciary-sustainability.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="gov-card p-4 d-flex flex-column h-100">
+            <span class="small text-warning fw-bold mb-1">Cyber Governance &bull; Aug 2026</span>
+            <h3 class="h5 fw-bold mb-2"><a href="blog-cybersecurity-sec.html" class="text-reset text-decoration-none">Cybersecurity Incident Reporting: 4-Day SEC Rule Lessons</a></h3>
+            <p class="small text-muted mb-3 flex-grow-1">Lessons learned from recent enforcement notices regarding the definition of material cybersecurity incidents.</p>
+            <div class="rounded overflow-hidden mb-3">
+              <img src="assets/images/blog-3.jpg" alt="Cyber Compliance" class="w-100 object-cover" style="height: 190px; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <a href="blog-cybersecurity-sec.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation CTA Banner -->
+  <section class="py-5 bg-gradient-to-r from-slate-900 to-slate-800 text-white border-top">
+    <div class="container py-4 text-center">
+      <span class="gov-badge mb-3">Direct Boardroom Engagement</span>
+      <h2 class="display-6 fw-bold text-white mb-3">Ensure Complete Institutional Compliance & Governance</h2>
+      <p class="text-slate-300 max-w-2xl mx-auto mb-4 fs-5">
+        Schedule a confidential briefing with our senior governance partners to evaluate your board charter and regulatory posture.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="contact.html" class="btn btn-gov-primary btn-lg">
+          <span>Request Confidential Consultation</span>
+          <i class="bi bi-shield-check"></i>
+        </a>
+        <a href="pricing.html" class="btn btn-gov-outline text-white border-white btn-lg">
+          <span>View Engagement Tiers</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Global Footer -->
+  <footer class="gov-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4">
+          <a class="gov-brand mb-3 d-inline-flex" href="index.html">
+            <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span><span class="text-white">GOVERN</span><span class="gold">ORA</span></span>
+          </a>
+          <p class="text-secondary small mb-4">
+            Governora is an international corporate governance, regulatory compliance, and board advisory consulting practice. We safeguard enterprise reputation, ensure strict audit readiness, and optimize board effectiveness.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Practices</h5>
+          <ul class="gov-footer-links">
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Board Evaluation</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Risk Management</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> SOX Compliance</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Ethics & Conduct</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> ESG Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Company</h5>
+          <ul class="gov-footer-links">
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-warning"></i> About Practice</a></li>
+            <li><a href="case-studies.html"><i class="bi bi-chevron-right small text-warning"></i> Client Engagements</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small text-warning"></i> Policy Insights</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small text-warning"></i> Advisory Packages</a></li>
+            <li><a href="coming-soon.html"><i class="bi bi-chevron-right small text-warning"></i> Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Regulatory Bulletin</h5>
+          <p class="text-secondary small mb-3">Subscribe to our monthly global compliance and fiduciary duty brief.</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control gov-form-control" placeholder="corporate@email.com" required aria-label="Corporate Email">
+              <button class="btn btn-gov-primary" type="submit"><i class="bi bi-send"></i></button>
+            </div>
+            <div class="newsletter-feedback"></div>
+          </form>
+          <div class="small text-secondary mt-3">
+            <i class="bi bi-shield-lock-fill text-warning me-1"></i> Strictly confidential. No unsolicited contact.
+          </div>
+        </div>
+      </div>
+
+      <div class="gov-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Governora Advisory Partners LLP. All rights reserved. Premium enterprise template.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-secondary small text-decoration-none">Terms of Engagement</a>
+          <a href="404.html" class="text-secondary small text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="gov-back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Core Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+</body>
+</html>

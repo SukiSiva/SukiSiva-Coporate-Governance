@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('governora_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          document.documentElement.classList.remove('dark');
+        }
+        var r = localStorage.getItem('governora_rtl');
+        if (r === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Risk Management Practice Details | Governora - Corporate Governance & Compliance Advisory</title>
+  <meta name="description" content="Embedding COSO and ISO 31000 risk management frameworks, defining board risk appetite statements, and establishing early-warning metric dashboards.">
+  <!-- Favicon / Website Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      corePlugins: { preflight: false, collapse: false },
+      theme: {
+        extend: {
+          colors: {
+            govNavy: '#101D32',
+            govGold: '#C6A66B',
+            govDark: '#0A1220'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg gov-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <a class="gov-brand navbar-brand" href="index.html">
+        <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span>GOVERN<span class="gold">ORA</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#govNav" aria-controls="govNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="govNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-building me-2"></i> Home 1 Corporate Advisory</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-shield-lock me-2"></i> Home 2 Regulatory & Risk</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <!-- Theme Switcher -->
+          <button class="gov-tool-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun"></i>
+          </button>
+          <!-- RTL Switcher -->
+          <button class="gov-tool-btn rtl-toggle-btn fw-bold" title="Switch to RTL Mode (Right-to-Left)" aria-label="Switch to RTL Mode">
+            <span class="dir-badge">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-gov-primary">
+            <span>Book Advisory</span>
+            <i class="bi bi-arrow-right icon-flip-rtl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<main>
+  <!-- Page Header Hero with 4K Realistic Background -->
+  <section class="position-relative text-white py-5 overflow-hidden border-bottom text-center" style="background: linear-gradient(135deg, rgba(10, 18, 32, 0.88) 0%, rgba(16, 29, 50, 0.84) 100%), url('assets/images/service-details-hero-bg.jpg') center/cover no-repeat; min-height: 380px;">
+    <div class="container py-4 position-relative">
+      <nav aria-label="breadcrumb" class="mb-3 d-flex justify-content-center">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html" class="text-slate-300 text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item"><a href="services.html" class="text-slate-300 text-decoration-none">Services</a></li>
+          <li class="breadcrumb-item active text-warning" aria-current="page">Enterprise Risk Management Practice</li>
+        </ol>
+      </nav>
+      <span class="badge bg-warning/20 text-warning px-3 py-1 rounded-pill mb-3 fw-semibold border border-warning/40 mx-auto">
+        <i class="bi bi-briefcase me-1"></i> Risk Governance Practice
+      </span>
+      <h1 class="display-5 fw-bold mb-3 text-white">Enterprise Risk Management Practice</h1>
+      <div class="gold-divider mx-auto mb-3"></div>
+      <p class="lead text-slate-200 max-w-3xl mx-auto mb-0">
+        Embedding COSO and ISO 31000 risk management frameworks, defining board risk appetite statements, and establishing early-warning metric dashboards.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Details Content -->
+  <section class="py-5 my-md-4">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Main Column -->
+        <div class="col-lg-8">
+          <img src="assets/images/service-risk-management.jpg" alt="Enterprise Risk Management Practice" class="img-fluid rounded mb-4 shadow w-100" style="max-height: 420px; object-fit: cover;">
+
+          <h2 class="h3 fw-bold mb-3">Practice Overview & Enterprise Resilience</h2>
+          <p class="text-muted leading-relaxed mb-4">
+            Traditional ERM often degenerates into static spreadsheets reviewed once a year by busy audit committees. Governora transforms risk management into an active, strategic boardroom asset. Grounded in COSO Enterprise Risk Management and ISO 31000, our frameworks quantify risk appetite, detect early-warning signals, and protect balance sheet solvency.
+          </p>
+
+          <h3 class="h4 fw-bold mb-3">Key Boardroom Challenges Addressed</h3>
+          <div class="row g-3 mb-5">
+            <div class="col-md-6">
+              <div class="p-3 bg-surface rounded border h-100">
+                <h4 class="h6 fw-bold text-warning mb-2"><i class="bi bi-shield-exclamation me-2"></i>Siloed Risk Registers</h4>
+                <p class="small text-muted mb-0">Divisional business units tracking risks in isolation, blinding the executive committee to correlated, enterprise-wide compound risks.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 bg-surface rounded border h-100">
+                <h4 class="h6 fw-bold text-warning mb-2"><i class="bi bi-shield-exclamation me-2"></i>Ambiguous Risk Appetite Statements</h4>
+                <p class="small text-muted mb-0">Vague corporate slogans ("we have zero tolerance for safety violations") that fail to provide quantifiable capital loss limits.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 bg-surface rounded border h-100">
+                <h4 class="h6 fw-bold text-warning mb-2"><i class="bi bi-shield-exclamation me-2"></i>Neglect of Black Swan Scenarios</h4>
+                <p class="small text-muted mb-0">Over-reliance on historical probability distributions, leaving the board unprepared for geopolitical conflicts or cyber grid collapses.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 bg-surface rounded border h-100">
+                <h4 class="h6 fw-bold text-warning mb-2"><i class="bi bi-shield-exclamation me-2"></i>Board-to-Risk Disconnection</h4>
+                <p class="small text-muted mb-0">Board risk committees lacking dedicated quantitative metrics and real-time early warning key risk indicators (KRIs).</p>
+              </div>
+            </div>
+
+          </div>
+
+          <h3 class="h4 fw-bold mb-3">Our Enterprise Risk Engineering Architecture</h3>
+          <p class="text-muted mb-4">
+            We build an active, telemetry-driven risk framework structured around four core phases:
+          </p>
+          <div class="accordion gov-accordion mb-5" id="methodologyAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#pra_m1">
+                  Phase 1: Enterprise Risk Inventory & Correlated Mapping
+                </button>
+              </h2>
+              <div id="pra_m1" class="accordion-collapse collapse show" data-bs-parent="#methodologyAccordion">
+                <div class="accordion-body">
+                  Conducting executive risk discovery workshops to inventory top-tier strategic, financial, operational, and reputational hazards.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pra_m2">
+                  Phase 2: Board Risk Appetite & Tolerance Calibration
+                </button>
+              </h2>
+              <div id="pra_m2" class="accordion-collapse collapse " data-bs-parent="#methodologyAccordion">
+                <div class="accordion-body">
+                  Establishing quantitative risk tolerance bands and capital loss thresholds tied directly to corporate credit ratings and debt covenants.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pra_m3">
+                  Phase 3: Dynamic KRI Dashboard & Telemetry Integration
+                </button>
+              </h2>
+              <div id="pra_m3" class="accordion-collapse collapse " data-bs-parent="#methodologyAccordion">
+                <div class="accordion-body">
+                  Constructing automated Key Risk Indicator (KRI) data pipelines with early-warning threshold triggers for executive escalation.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pra_m4">
+                  Phase 4: Board Risk Committee Governance & Stress-Testing
+                </button>
+              </h2>
+              <div id="pra_m4" class="accordion-collapse collapse " data-bs-parent="#methodologyAccordion">
+                <div class="accordion-body">
+                  Drafting Risk Committee oversight calendars and conducting annual severe macroeconomic stress-testing scenarios.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h3 class="h4 fw-bold mb-3">Key Deliverables</h3>
+          <ul class="gov-checklist mb-5">
+            <li>Enterprise Risk Management (ERM) Charter & Policy Framework</li>
+            <li>Quantified Board Risk Appetite Statement & Tolerance Matrix</li>
+            <li>Executive Key Risk Indicator (KRI) Dashboard Specification</li>
+            <li>Compound Scenario Stress-Testing & Crisis Playbook</li>
+            <li>Board Risk Committee Standing Agenda & Reporting Packets</li>
+
+          </ul>
+
+          <h3 class="h4 fw-bold mb-3">Frequently Asked Questions</h3>
+          <div class="accordion gov-accordion mb-5" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#pra_faq1">
+                  How does Governora align with the COSO ERM framework?
+                </button>
+              </h2>
+              <div id="pra_faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Our methodology integrates all five components of COSO ERM: Governance & Culture, Strategy & Objective-Setting, Performance, Review, and Information & Reporting.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pra_faq2">
+                  Should ERM oversight reside in the Audit Committee or a standalone Risk Committee?
+                </button>
+              </h2>
+              <div id="pra_faq2" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  For financial, healthcare, energy, and complex multinational firms, we typically recommend a standalone Board Risk Committee to prevent audit committee overload.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pra_faq3">
+                  How are emerging risks like AI and climate change incorporated?
+                </button>
+              </h2>
+              <div id="pra_faq3" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We utilize scenario-based stress modeling rather than static historical charts to capture non-linear emerging risks.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4 align-self-start">
+          <div class="gov-card h-auto p-4 mb-4">
+            <h4 class="h5 fw-bold mb-3">Engagement Scope Summary</h4>
+            <div class="small mb-3 pb-3 border-bottom">
+              <span class="text-muted d-block">Practice Area:</span>
+              <span class="fw-bold text-dark dark:text-white">Enterprise Risk Management (ERM)</span>
+            </div>
+            <div class="small mb-3 pb-3 border-bottom">
+              <span class="text-muted d-block">Target Audience:</span>
+              <span class="fw-bold text-dark dark:text-white">Chief Risk Officers, Chief Financial Officers, Board Risk Committees</span>
+            </div>
+            <div class="small mb-3 pb-3 border-bottom">
+              <span class="text-muted d-block">Engagement Timeline:</span>
+              <span class="fw-bold text-dark dark:text-white">6 to 12 Weeks</span>
+            </div>
+            <div class="small mb-4">
+              <span class="text-muted d-block">Regulatory Alignment:</span>
+              <span class="fw-bold text-dark dark:text-white">COSO ERM 2017, ISO 31000:2018, Basel Committee Principles</span>
+            </div>
+            <a href="contact.html" class="btn btn-gov-primary w-100">
+              <span>Book Practice Scoping</span>
+              <i class="bi bi-calendar2-check"></i>
+            </a>
+          </div>
+
+          <div class="gov-card h-auto p-4 bg-surface">
+            <h4 class="h6 fw-bold mb-3 text-warning">Related Advisory Practices</h4>
+            <ul class="list-unstyled mb-0 small">
+              <li class="py-2 border-bottom"><a href="service-corporate-governance.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Corporate Governance Advisory</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2 border-bottom"><a href="service-board-evaluation.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Board Effectiveness & Evaluation</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2 border-bottom"><a href="service-regulatory-compliance.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Regulatory Compliance</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2 border-bottom"><a href="service-risk-management.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Enterprise Risk Management</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2 border-bottom"><a href="service-audit-readiness.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Internal Controls & Audit Readiness</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2 border-bottom"><a href="service-ethics-whistleblower.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Ethics & Whistleblower</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2 border-bottom"><a href="service-policy-development.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Corporate Policy Development</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2 border-bottom"><a href="service-compliance-monitoring.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Compliance Monitoring & Reporting</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+              <li class="py-2"><a href="service-custom-mandate.html" class="text-reset text-decoration-none d-flex justify-content-between"><span>Custom Advisory Mandate</span> <i class="bi bi-chevron-right small text-warning"></i></a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Global Footer -->
+  <footer class="gov-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4">
+          <a class="gov-brand mb-3 d-inline-flex" href="index.html">
+            <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span><span class="text-white">GOVERN</span><span class="gold">ORA</span></span>
+          </a>
+          <p class="text-secondary small mb-4">
+            Governora is an international corporate governance, regulatory compliance, and board advisory consulting practice. We safeguard enterprise reputation, ensure strict audit readiness, and optimize board effectiveness.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Practices</h5>
+          <ul class="gov-footer-links">
+            <li><a href="service-board-evaluation.html"><i class="bi bi-chevron-right small text-warning"></i> Board Evaluation</a></li>
+            <li><a href="service-risk-management.html"><i class="bi bi-chevron-right small text-warning"></i> Risk Management</a></li>
+            <li><a href="service-audit-readiness.html"><i class="bi bi-chevron-right small text-warning"></i> SOX Compliance</a></li>
+            <li><a href="service-ethics-whistleblower.html"><i class="bi bi-chevron-right small text-warning"></i> Ethics & Conduct</a></li>
+            <li><a href="service-regulatory-compliance.html"><i class="bi bi-chevron-right small text-warning"></i> ESG Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Company</h5>
+          <ul class="gov-footer-links">
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-warning"></i> About Practice</a></li>
+            <li><a href="case-studies.html"><i class="bi bi-chevron-right small text-warning"></i> Client Engagements</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small text-warning"></i> Policy Insights</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small text-warning"></i> Advisory Packages</a></li>
+            <li><a href="coming-soon.html"><i class="bi bi-chevron-right small text-warning"></i> Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Regulatory Bulletin</h5>
+          <p class="text-secondary small mb-3">Subscribe to our monthly global compliance and fiduciary duty brief.</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control gov-form-control" placeholder="corporate@email.com" required aria-label="Corporate Email">
+              <button class="btn btn-gov-primary" type="submit"><i class="bi bi-send"></i></button>
+            </div>
+            <div class="newsletter-feedback"></div>
+          </form>
+          <div class="small text-secondary mt-3">
+            <i class="bi bi-shield-lock-fill text-warning me-1"></i> Strictly confidential. No unsolicited contact.
+          </div>
+        </div>
+      </div>
+
+      <div class="gov-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Governora Advisory Partners LLP. All rights reserved. Premium enterprise template.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-secondary small text-decoration-none">Terms of Engagement</a>
+          <a href="404.html" class="text-secondary small text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="gov-back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Core Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+</body>
+</html>

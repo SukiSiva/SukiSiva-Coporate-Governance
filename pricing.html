@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('governora_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          document.documentElement.classList.remove('dark');
+        }
+        var r = localStorage.getItem('governora_rtl');
+        if (r === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisory Retainers & Pricing Packages | Governora - Corporate Governance & Compliance Advisory</title>
+  <meta name="description" content="Review illustrative pricing tiers, board evaluation packages, and enterprise compliance retainers for Governora.">
+  <!-- Favicon / Website Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      corePlugins: { preflight: false, collapse: false },
+      theme: {
+        extend: {
+          colors: {
+            govNavy: '#101D32',
+            govGold: '#C6A66B',
+            govDark: '#0A1220'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg gov-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <a class="gov-brand navbar-brand" href="index.html">
+        <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span>GOVERN<span class="gold">ORA</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#govNav" aria-controls="govNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="govNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="index.html"><i class="bi bi-building me-2"></i> Home 1  Corporate Advisory</a></li>
+              <li><a class="dropdown-item " href="home-2.html"><i class="bi bi-shield-lock me-2"></i> Home 2  Regulatory & Risk</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="blog.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <!-- Theme Switcher -->
+          <button class="gov-tool-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun"></i>
+          </button>
+          <!-- RTL Switcher -->
+          <button class="gov-tool-btn rtl-toggle-btn fw-bold" title="Switch to RTL Mode (Right-to-Left)" aria-label="Switch to RTL Mode">
+            <span class="dir-badge">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-gov-primary">
+            <span>Book Advisory</span>
+            <i class="bi bi-arrow-right icon-flip-rtl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<main>
+  <!-- Page Header Hero with 4K Realistic Background -->
+  <section class="position-relative text-white py-5 overflow-hidden border-bottom text-center" style="background: linear-gradient(135deg, rgba(10, 18, 32, 0.88) 0%, rgba(16, 29, 50, 0.84) 100%), url('assets/images/pricing-hero-bg.jpg') center/cover no-repeat; min-height: 400px;">
+    <div class="container py-md-3 position-relative z-1">
+      <div class="mx-auto" style="max-width: 860px;">
+        <h1 class="display-5 fw-bold mb-3 text-white text-uppercase" style="letter-spacing: 0.03em; line-height: 1.25; font-size: calc(1.5rem + 1.5vw);">
+          Structured Advisory &amp; Retainer Packages
+        </h1>
+        <div class="gold-divider mx-auto my-3"></div>
+        <p class="lead text-slate-200 mx-auto mb-3" style="max-width: 760px; font-size: 1.1rem; line-height: 1.7; font-weight: 400;">
+          Transparent, configurable advisory tiers tailored to institutional board reviews, annual compliance monitoring, and high-stakes corporate transformations.
+        </p>
+        <div class="alert alert-warning/20 text-warning d-inline-block mt-2 py-1 px-3 small border border-warning/40 rounded-pill bg-slate-900/60 backdrop-blur-sm">
+          <i class="bi bi-info-circle me-1"></i> Note: All fee schedules below are illustrative benchmarks subject to preliminary conflict clearance and customized scope definition.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="py-5 my-md-4">
+    <div class="container">
+      <div class="row g-4 align-items-stretch justify-content-center">
+        <!-- Tier 1 -->
+        <div class="col-lg-4 d-flex">
+          <div class="pricing-card w-100">
+            <h3 class="h4 fw-bold mb-2">Diagnostic Review</h3>
+            <p class="small text-muted pricing-card-desc">Focused evaluation for mid-market boards or specific committee charters.</p>
+            <div class="pricing-price">
+              $25,000 <span class="fs-6 text-muted fw-normal">/ engagement</span>
+            </div>
+            <p class="small text-muted pricing-timeline">Typical timeline: 3 &ndash; 4 Weeks</p>
+
+            <ul class="gov-checklist small">
+              <li>Comprehensive Board Charter Diagnostic</li>
+              <li>Audit Committee Mandate Gap Analysis</li>
+              <li>Benchmarking against ISO 37000 Standards</li>
+              <li>1 Executive Summary Presentation</li>
+              <li>Written Statutory Defensibility Report</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-gov-outline">Request Diagnostic Scope</a>
+          </div>
+        </div>
+
+        <!-- Tier 2 (Featured) -->
+        <div class="col-lg-4 d-flex">
+          <div class="pricing-card featured bg-card w-100">
+            <div class="pricing-badge">Most Institutional Inquiries</div>
+            <h3 class="h4 fw-bold mb-2">Full Board Assurance</h3>
+            <p class="small text-muted pricing-card-desc">Comprehensive annual board effectiveness &amp; compliance overhaul.</p>
+            <div class="pricing-price text-warning">
+              $65,000 <span class="fs-6 text-muted fw-normal">/ annual engagement</span>
+            </div>
+            <p class="small text-muted pricing-timeline">Typical timeline: 6 &ndash; 8 Weeks + 12-Mo Support</p>
+
+            <ul class="gov-checklist small">
+              <li>Everything in Diagnostic Review</li>
+              <li>Full Board Dynamics &amp; Peer Interviews</li>
+              <li>Objective Boardroom Skills Matrix</li>
+              <li>Delegation of Authority (DoA) Matrix Overhaul</li>
+              <li>SOX 404 / Risk Register Calibration</li>
+              <li>Quarterly Regulatory Horizon Briefings</li>
+              <li>Emergency Committee Hotline (24/7)</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-gov-primary">Initiate Board Scope</a>
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="col-lg-4 d-flex">
+          <div class="pricing-card w-100">
+            <h3 class="h4 fw-bold mb-2">Enterprise Retainer</h3>
+            <p class="small text-muted pricing-card-desc">Continuous standing fiduciary counsel for global multi-entity conglomerates.</p>
+            <div class="pricing-price">
+              $150,000+ <span class="fs-6 text-muted fw-normal">/ annual retainer</span>
+            </div>
+            <p class="small text-muted pricing-timeline">Multi-jurisdiction ongoing coverage</p>
+
+            <ul class="gov-checklist small">
+              <li>Everything in Full Board Assurance</li>
+              <li>Multi-Jurisdiction Subsidiary Harmonization</li>
+              <li>Whistleblower Independent Investigation Seat</li>
+              <li>Direct Supervisory Liaison Representation</li>
+              <li>Custom Enterprise Risk Management (ERM) Software Sync</li>
+              <li>Dedicated Senior Practice Partner &amp; Team</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-gov-outline">Inquire Enterprise Retainer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisory Engagement Lifecycle Framework -->
+  <section class="py-5 bg-surface border-top border-bottom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Engagement Roadmap</span>
+        <h2 class="section-title">How We Structure Your Advisory Mandate</h2>
+        <div class="gold-divider mx-auto mb-3"></div>
+        <p class="text-muted max-w-2xl mx-auto">
+          Every engagement is conducted under strict evidentiary workpaper protocols to ensure legal defensibility, audit readiness, and board-level privilege.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card h-100 p-4 border-top border-warning border-3">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-warning text-dark fw-bold">Phase 01</span>
+              <span class="fs-4 text-warning"><i class="bi bi-shield-check"></i></span>
+            </div>
+            <h4 class="h5 fw-bold mb-2">Conflict Clearance &amp; Scoping</h4>
+            <p class="small text-muted mb-3">
+              24-hour conflicts committee clearance, mutual NDA execution, D&amp;O underwriter notification, and tailored charter boundary definition.
+            </p>
+            <div class="small fw-semibold text-warning"><i class="bi bi-clock me-1"></i> Week 1 &bull; Clearance</div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card h-100 p-4 border-top border-warning border-3">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-warning text-dark fw-bold">Phase 02</span>
+              <span class="fs-4 text-warning"><i class="bi bi-journal-text"></i></span>
+            </div>
+            <h4 class="h5 fw-bold mb-2">Diagnostic Audit &amp; Interviews</h4>
+            <p class="small text-muted mb-3">
+              Confidential 1-on-1 director interviews, committee charter stress-testing, and delegation of authority (DoA) benchmarking against ISO 37000.
+            </p>
+            <div class="small fw-semibold text-warning"><i class="bi bi-clock me-1"></i> Weeks 2–4 &bull; Discovery</div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card h-100 p-4 border-top border-warning border-3">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-warning text-dark fw-bold">Phase 03</span>
+              <span class="fs-4 text-warning"><i class="bi bi-sliders"></i></span>
+            </div>
+            <h4 class="h5 fw-bold mb-2">Fiduciary Recalibration</h4>
+            <p class="small text-muted mb-3">
+              Board skills matrix delivery, executive compensation risk review, ERM risk register calibration, and Special Litigation Committee escalation trees.
+            </p>
+            <div class="small fw-semibold text-warning"><i class="bi bi-clock me-1"></i> Weeks 5–6 &bull; Optimization</div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card h-100 p-4 border-top border-warning border-3">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-warning text-dark fw-bold">Phase 04</span>
+              <span class="fs-4 text-warning"><i class="bi bi-award"></i></span>
+            </div>
+            <h4 class="h5 fw-bold mb-2">Attestation &amp; Retainer</h4>
+            <p class="small text-muted mb-3">
+              Formal legal defensibility opinion delivery, executive sign-off presentation, quarterly horizon updates, and 24/7 crisis hotline activation.
+            </p>
+            <div class="small fw-semibold text-warning"><i class="bi bi-clock me-1"></i> Week 7+ &bull; Standing Defense</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-5 bg-surface border-top border-bottom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Detailed Matrix</span>
+        <h2 class="section-title">Feature Comparison Across Advisory Packages</h2>
+        <div class="gold-divider mx-auto"></div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center bg-card shadow-sm">
+          <thead class="table-dark">
+            <tr>
+              <th class="text-start py-3" style="width: 40%;">Advisory Feature / Deliverable</th>
+              <th class="py-3" style="width: 20%;">Diagnostic Review</th>
+              <th class="py-3 text-warning" style="width: 20%;">Full Board Assurance</th>
+              <th class="py-3" style="width: 20%;">Enterprise Retainer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-start fw-semibold">Charter & Delegation Audit</td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+            </tr>
+            <tr>
+              <td class="text-start fw-semibold">Confidential Director Peer Interviews</td>
+              <td><i class="bi bi-dash text-muted"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+            </tr>
+            <tr>
+              <td class="text-start fw-semibold">Board Skills Matrix & Succession Plan</td>
+              <td><i class="bi bi-dash text-muted"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+            </tr>
+            <tr>
+              <td class="text-start fw-semibold">SOX 404 Internal Controls Certification</td>
+              <td><i class="bi bi-dash text-muted"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+            </tr>
+            <tr>
+              <td class="text-start fw-semibold">Multi-Jurisdiction Subsidiary Alignment</td>
+              <td><i class="bi bi-dash text-muted"></i></td>
+              <td><i class="bi bi-dash text-muted"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+            </tr>
+            <tr>
+              <td class="text-start fw-semibold">24/7 Crisis Regulatory Liaison Team</td>
+              <td><i class="bi bi-dash text-muted"></i></td>
+              <td><i class="bi bi-dash text-muted"></i></td>
+              <td><i class="bi bi-check2 text-success fs-5"></i></td>
+            </tr>
+            <tr>
+              <td class="text-start fw-semibold">Lead Partner Assigned</td>
+              <td>Senior Consultant</td>
+              <td>Managing Director</td>
+              <td>Practice Chair (KC / CPA)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialized Modular Extensions & Add-On Mandates with 4K Images -->
+  <section class="py-5 my-md-4">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Tailored Mandates</span>
+        <h2 class="section-title">Specialized Board Extensions &amp; Modular Add-Ons</h2>
+        <div class="gold-divider mx-auto mb-3"></div>
+        <p class="text-muted max-w-2xl mx-auto">
+          Configure bespoke advisory extensions to supplement your core governance retainer during high-stakes corporate transactions, regulatory inquiries, and AGM seasons.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Add-on 1 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="gov-card p-0 overflow-hidden h-100 d-flex flex-column w-100">
+            <img src="assets/images/pricing-modular-crisis.jpg" alt="Special Litigation Committee Counsel" class="w-100" style="height: 180px; object-fit: cover; flex-shrink: 0;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning small align-self-start mb-2">Corporate Defense</span>
+              <h4 class="h6 fw-bold mb-2 text-uppercase" style="min-height: 48px; display: flex; align-items: flex-start; line-height: 1.35;">Special Litigation Committee (SLC) Counsel</h4>
+              <p class="small text-muted mb-4 flex-grow-1" style="min-height: 72px;">
+                Independent legal counsel to evaluate shareholder derivative litigation demands and assert Delaware business judgment rule protection.
+              </p>
+              <div class="border-top pt-3 mt-auto d-flex justify-content-between align-items-center">
+                <span class="small fw-bold text-warning">From $35,000</span>
+                <a href="contact.html" class="gov-card-link small m-0">Inquire <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add-on 2 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="gov-card p-0 overflow-hidden h-100 d-flex flex-column w-100">
+            <img src="assets/images/pricing-specialized-mandates.jpg" alt="Crisis Regulatory Response" class="w-100" style="height: 180px; object-fit: cover; flex-shrink: 0;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-danger-subtle text-danger small align-self-start mb-2">Rapid Mobilization</span>
+              <h4 class="h6 fw-bold mb-2 text-uppercase" style="min-height: 48px; display: flex; align-items: flex-start; line-height: 1.35;">Crisis Regulatory Response &amp; SEC Defense</h4>
+              <p class="small text-muted mb-4 flex-grow-1" style="min-height: 72px;">
+                Emergency 48-hour liaison deployment following formal SEC subpoenas, DOJ inquiries, or high-level anonymous whistleblower hotline escalations.
+              </p>
+              <div class="border-top pt-3 mt-auto d-flex justify-content-between align-items-center">
+                <span class="small fw-bold text-warning">From $45,000</span>
+                <a href="contact.html" class="gov-card-link small m-0">Inquire <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add-on 3 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="gov-card p-0 overflow-hidden h-100 d-flex flex-column w-100">
+            <img src="assets/images/pricing-fiduciary-roi.jpg" alt="CSRD & ESG Audit Readiness" class="w-100" style="height: 180px; object-fit: cover; flex-shrink: 0;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-success-subtle text-success small align-self-start mb-2">ESG Assurance</span>
+              <h4 class="h6 fw-bold mb-2 text-uppercase" style="min-height: 48px; display: flex; align-items: flex-start; line-height: 1.35;">CSRD &amp; SEC Double-Materiality ESG Audit</h4>
+              <p class="small text-muted mb-4 flex-grow-1" style="min-height: 72px;">
+                Harmonizing European CSRD sustainability reporting and SEC climate disclosure rules with comprehensive audit workpaper defensibility.
+              </p>
+              <div class="border-top pt-3 mt-auto d-flex justify-content-between align-items-center">
+                <span class="small fw-bold text-warning">From $30,000</span>
+                <a href="contact.html" class="gov-card-link small m-0">Inquire <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add-on 4 -->
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="gov-card p-0 overflow-hidden h-100 d-flex flex-column w-100">
+            <img src="assets/images/pricing-engagement-lifecycle.jpg" alt="Executive Compensation Audit" class="w-100" style="height: 180px; object-fit: cover; flex-shrink: 0;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info small align-self-start mb-2">Proxy Readiness</span>
+              <h4 class="h6 fw-bold mb-2 text-uppercase" style="min-height: 48px; display: flex; align-items: flex-start; line-height: 1.35;">Say-on-Pay &amp; Clawback Policy Recalibration</h4>
+              <p class="small text-muted mb-4 flex-grow-1" style="min-height: 72px;">
+                Auditing executive compensation peer groups and clawback triggers against ISS and Glass Lewis proxy advisor voting recommendation standards.
+              </p>
+              <div class="border-top pt-3 mt-auto d-flex justify-content-between align-items-center">
+                <span class="small fw-bold text-warning">From $28,000</span>
+                <a href="contact.html" class="gov-card-link small m-0">Inquire <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fiduciary ROI & Value Assurance Showcase -->
+  <section class="py-5 bg-surface border-top border-bottom">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <span class="section-tag">Measurable Assurance</span>
+          <h2 class="section-title mb-3">Quantifiable Board Protection &amp; Value Realization</h2>
+          <div class="gold-divider mb-4"></div>
+          <p class="text-muted mb-4">
+            Our value-based advisory retainers deliver defensible governance enhancements that actively mitigate legal liability, satisfy external audit mandates, and optimize D&amp;O underwriting terms.
+          </p>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="p-3 gov-card text-center">
+                <div class="display-6 fw-bold text-warning mb-1">99.4%</div>
+                <div class="small fw-semibold">Attestation Defensibility</div>
+                <div class="small text-muted mt-1">Zero rejected governance filings across 140+ reviews</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 gov-card text-center">
+                <div class="display-6 fw-bold text-warning mb-1">$42M+</div>
+                <div class="small fw-semibold">Derivative Risk Avoided</div>
+                <div class="small text-muted mt-1">Estimated shareholder litigation exposure mitigated</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 gov-card text-center">
+                <div class="display-6 fw-bold text-warning mb-1">48-Hr</div>
+                <div class="small fw-semibold">Crisis Mobilization</div>
+                <div class="small text-muted mt-1">Guaranteed senior partner response SLA</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 gov-card text-center">
+                <div class="display-6 fw-bold text-warning mb-1">15–20%</div>
+                <div class="small fw-semibold">D&amp;O Premium Credits</div>
+                <div class="small text-muted mt-1">Average underwriter discounts for certified boards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="gov-card p-4 p-lg-5 position-relative overflow-hidden border-warning/30">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="gov-brand-icon fs-3 p-3 bg-warning/10 text-warning rounded-circle">
+                <i class="bi bi-shield-shaded"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">D&amp;O Insurance Underwriter Endorsement</h3>
+                <span class="small text-muted">Institutional Risk Mitigation Standard</span>
+              </div>
+            </div>
+            <p class="text-muted small mb-4">
+              Leading global directors and officers (D&amp;O) commercial liability underwriters recognize Governora's independent annual board evaluation and SOX internal control certifications as gold-standard governance assurance, frequently granting premium reductions and higher liability coverage sub-limits.
+            </p>
+            <div class="border-top pt-3 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+              <span class="small text-muted"><i class="bi bi-patch-check-fill text-warning me-1"></i> ISO 37000 &amp; PCAOB Compliant</span>
+              <a href="contact.html" class="btn btn-gov-primary btn-sm">Schedule Scoping Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expanded Pricing FAQ -->
+  <section class="py-5 my-md-4">
+    <div class="container max-w-3xl">
+      <div class="text-center mb-5">
+        <span class="section-tag">Transparency</span>
+        <h3 class="h3 fw-bold mb-2">Advisory Retainer Terms &amp; Governance FAQ</h3>
+        <div class="gold-divider mx-auto mb-3"></div>
+        <p class="text-muted small">Everything you need to know about our engagement structure, conflict clearance, and billing integrity.</p>
+      </div>
+
+      <div class="accordion gov-accordion" id="pricingFaq">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pf1">
+              Are these fees fixed or billed hourly?
+            </button>
+          </h2>
+          <div id="pf1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">
+              Governora operates predominantly under value-based fixed fee engagements for diagnostics and annual retainers, ensuring complete budgetary predictability for audit committees without unexpected disbursements or billable hour creep.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf2">
+              How do you handle preliminary conflict checks?
+            </button>
+          </h2>
+          <div id="pf2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">
+              Prior to discussing specific entity details or accepting retainers, our independent conflicts committee conducts a thorough clearance against our existing client register within 24 business hours to guarantee uncompromised fiduciary objectivity.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf3">
+              Can retainers cover multinational overseas subsidiaries?
+            </button>
+          </h2>
+          <div id="pf3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">
+              Yes. Our Enterprise Retainer tier is explicitly designed to harmonize corporate governance across dual-listed parents and commercial operating subsidiaries across North America, the European Union, the United Kingdom, and the GCC region.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf4">
+              Does an active Governora retainer reduce D&amp;O insurance premiums?
+            </button>
+          </h2>
+          <div id="pf4" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">
+              Historically, yes. Major commercial liability insurers in London, New York, and Zurich routinely award our clients 12% to 20% D&amp;O policy premium reductions upon reviewing our independent board evaluation workpapers and attestation certificates.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf5">
+              How is confidential director testimony protected during evaluations?
+            </button>
+          </h2>
+          <div id="pf5" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">
+              Director peer interviews and committee evaluations are protected under formalized legal consulting engagement charters designed to preserve work-product doctrine and attorney-client privilege, guarding confidential feedback against outside civil discovery.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf6">
+              What is the activation timeline for urgent crisis regulatory mandates?
+            </button>
+          </h2>
+          <div id="pf6" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">
+              For active retainers, crisis regulatory advisory coverage begins immediately with a guaranteed 4-hour partner response. For new institutional clients facing urgent SEC subpoenas or whistleblower crises, emergency conflict clearance and team deployment are finalized within 48 hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Global Footer -->
+  <footer class="gov-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4">
+          <a class="gov-brand mb-3 d-inline-flex" href="index.html">
+            <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span><span class="text-white">GOVERN</span><span class="gold">ORA</span></span>
+          </a>
+          <p class="text-secondary small mb-4">
+            Governora is an international corporate governance, regulatory compliance, and board advisory consulting practice. We safeguard enterprise reputation, ensure strict audit readiness, and optimize board effectiveness.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Practices</h5>
+          <ul class="gov-footer-links">
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Board Evaluation</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Risk Management</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> SOX Compliance</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Ethics & Conduct</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> ESG Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Company</h5>
+          <ul class="gov-footer-links">
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-warning"></i> About Practice</a></li>
+            <li><a href="case-studies.html"><i class="bi bi-chevron-right small text-warning"></i> Client Engagements</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small text-warning"></i> Policy Insights</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small text-warning"></i> Advisory Packages</a></li>
+            <li><a href="coming-soon.html"><i class="bi bi-chevron-right small text-warning"></i> Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Regulatory Bulletin</h5>
+          <p class="text-secondary small mb-3">Subscribe to our monthly global compliance and fiduciary duty brief.</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control gov-form-control" placeholder="corporate@email.com" required aria-label="Corporate Email">
+              <button class="btn btn-gov-primary" type="submit"><i class="bi bi-send"></i></button>
+            </div>
+            <div class="newsletter-feedback"></div>
+          </form>
+          <div class="small text-secondary mt-3">
+            <i class="bi bi-shield-lock-fill text-warning me-1"></i> Strictly confidential. No unsolicited contact.
+          </div>
+        </div>
+      </div>
+
+      <div class="gov-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Governora Advisory Partners LLP. All rights reserved. Premium enterprise template.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-secondary small text-decoration-none">Terms of Engagement</a>
+          <a href="404.html" class="text-secondary small text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="gov-back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Core Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+</body>
+</html>

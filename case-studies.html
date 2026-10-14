@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('governora_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          document.documentElement.classList.remove('dark');
+        }
+        var r = localStorage.getItem('governora_rtl');
+        if (r === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illustrative Case Scenarios & Engagements | Governora - Corporate Governance & Compliance Advisory</title>
+  <meta name="description" content="Explore Governora portfolio of governance, regulatory remediation, and board advisory case studies.">
+  <!-- Favicon / Website Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      corePlugins: { preflight: false, collapse: false },
+      theme: {
+        extend: {
+          colors: {
+            govNavy: '#101D32',
+            govGold: '#C6A66B',
+            govDark: '#0A1220'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg gov-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <a class="gov-brand navbar-brand" href="index.html">
+        <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span>GOVERN<span class="gold">ORA</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#govNav" aria-controls="govNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="govNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="index.html"><i class="bi bi-building me-2"></i> Home 1  Corporate Advisory</a></li>
+              <li><a class="dropdown-item " href="home-2.html"><i class="bi bi-shield-lock me-2"></i> Home 2  Regulatory & Risk</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="blog.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <!-- Theme Switcher -->
+          <button class="gov-tool-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun"></i>
+          </button>
+          <!-- RTL Switcher -->
+          <button class="gov-tool-btn rtl-toggle-btn fw-bold" title="Switch to RTL Mode (Right-to-Left)" aria-label="Switch to RTL Mode">
+            <span class="dir-badge">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-gov-primary">
+            <span>Book Advisory</span>
+            <i class="bi bi-arrow-right icon-flip-rtl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<main>
+  <!-- Page Header Hero with 4K Realistic Background -->
+  <section class="position-relative text-white py-5 overflow-hidden border-bottom text-center" style="background: linear-gradient(135deg, rgba(10, 18, 32, 0.88) 0%, rgba(16, 29, 50, 0.84) 100%), url('assets/images/case-hero-bg.jpg') center/cover no-repeat; min-height: 380px;">
+    <div class="container py-md-3 position-relative z-1">
+      <div class="mx-auto" style="max-width: 860px;">
+        <h1 class="display-5 fw-bold mb-3 text-white text-uppercase" style="letter-spacing: 0.03em; line-height: 1.25; font-size: calc(1.5rem + 1.5vw);">
+          Illustrative Case Scenarios
+        </h1>
+        <div class="gold-divider mx-auto my-3"></div>
+        <p class="lead text-slate-200 mx-auto mb-4" style="max-width: 760px; font-size: 1.1rem; line-height: 1.7; font-weight: 400;">
+          Representative advisory engagements across banking, healthcare, energy, and enterprise technology illustrating strategic challenges, interventions, and regulatory outcomes.
+        </p>
+      </div>
+
+      <!-- Fiduciary Portfolio Metrics Banner -->
+      <div class="row g-3 mx-auto pt-3 border-top border-white/15" style="max-width: 960px;">
+        <div class="col-6 col-md-3 d-flex">
+          <div class="p-3 bg-slate-900/70 backdrop-blur-md rounded border border-white/15 shadow-sm text-center w-100 d-flex flex-column justify-content-center">
+            <div class="h3 fw-bold text-warning mb-1">140+</div>
+            <div class="small text-slate-300 d-flex align-items-center justify-content-center" style="min-height: 40px; line-height: 1.3;">Mandates Delivered</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 d-flex">
+          <div class="p-3 bg-slate-900/70 backdrop-blur-md rounded border border-white/15 shadow-sm text-center w-100 d-flex flex-column justify-content-center">
+            <div class="h3 fw-bold text-warning mb-1">$220B+</div>
+            <div class="small text-slate-300 d-flex align-items-center justify-content-center" style="min-height: 40px; line-height: 1.3;">Assets Restructured</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 d-flex">
+          <div class="p-3 bg-slate-900/70 backdrop-blur-md rounded border border-white/15 shadow-sm text-center w-100 d-flex flex-column justify-content-center">
+            <div class="h3 fw-bold text-warning mb-1">100%</div>
+            <div class="small text-slate-300 d-flex align-items-center justify-content-center" style="min-height: 40px; line-height: 1.3;">Audit Clearance</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 d-flex">
+          <div class="p-3 bg-slate-900/70 backdrop-blur-md rounded border border-white/15 shadow-sm text-center w-100 d-flex flex-column justify-content-center">
+            <div class="h3 fw-bold text-warning mb-1">0</div>
+            <div class="small text-slate-300 d-flex align-items-center justify-content-center" style="min-height: 40px; line-height: 1.3;">Enforcement Penalties</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Case Studies Grid -->
+  <section class="py-5 my-md-4">
+    <div class="container">
+      <!-- Filter Buttons -->
+      <div class="d-flex flex-wrap gap-2 mb-5 justify-content-center">
+        <button class="btn btn-gov-primary active px-4" data-case-filter="all">All Sectors</button>
+        <button class="btn btn-gov-outline px-4" data-case-filter="finance">Financial Services</button>
+        <button class="btn btn-gov-outline px-4" data-case-filter="healthcare">Healthcare & Pharma</button>
+        <button class="btn btn-gov-outline px-4" data-case-filter="tech">Enterprise Tech</button>
+        <button class="btn btn-gov-outline px-4" data-case-filter="industrial">Energy & Manufacturing</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="row g-4" id="caseStudiesGrid">
+        <!-- Case 1 -->
+        <div class="col-md-6 col-lg-4" data-case-category="finance">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-1.jpg" alt="Banking Case" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-warning-subtle text-warning fw-semibold">Banking & Markets</span>
+                <span class="small text-muted">12-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Tier-1 Commercial Bank AML & Sanctions Remediation</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Multiple cross-border regulatory warning notices regarding transaction monitoring blind spots and high-risk client intake silos.<br><br>
+                <strong>Solution:</strong> Overhauled enterprise AML committee oversight, instituted algorithmic monitoring controls, and retrained compliance teams across 14 jurisdictions.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> 100% formal regulatory clearance with zero penalty enforcement and upgraded compliance rating.
+              </div>
+              <a href="case-study-details.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="col-md-6 col-lg-4" data-case-category="healthcare">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-2.jpg" alt="Hospital Network Board Restructuring & Ethics" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-info-subtle text-info fw-semibold">Healthcare Systems</span>
+                <span class="small text-muted">8-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Hospital Network Board Restructuring & Ethics</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Decentralized hospital system with 42 facilities experienced whistleblower claims regarding clinical procurement irregularities.<br><br>
+                <strong>Solution:</strong> Unified board oversight charters, established independent whistleblower hotline directly reporting to the audit chair, and instituted vendor anti-kickback screening.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Independent ethics review confirmed complete remediation; zero patient care disruption.
+              </div>
+              <a href="case-study-hospital-ethics.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="col-md-6 col-lg-4" data-case-category="tech">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-3.jpg" alt="Pre-IPO Software Governance & SOX 404 Readiness" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-success-subtle text-success fw-semibold">Enterprise SaaS</span>
+                <span class="small text-muted">6-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Pre-IPO Software Governance & SOX 404 Readiness</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Rapidly expanding cloud software enterprise prepared for NYSE public listing with inadequate board committee segregation and material internal control gaps.<br><br>
+                <strong>Solution:</strong> Recruited independent audit chair, drafted SEC-compliant board charters, and engineered SOX 404 automated financial controls.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Unqualified clean audit opinion on financial controls; successful $450M public listing.
+              </div>
+              <a href="case-study-software-sox.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div class="col-md-6 col-lg-4" data-case-category="industrial">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-grid-operator.jpg" alt="Multinational Grid Operator" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary fw-semibold">Energy & Infrastructure</span>
+                <span class="small text-muted">9-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Multinational Grid Operator Critical Risk Controls</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Regulatory reliability compliance failures leading to heightened state scrutiny and cross-border environmental reporting exposure.<br><br>
+                <strong>Solution:</strong> Engineered continuous reliability monitoring protocols, restructured risk committee delegations, and instituted carbon accounting verification.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Restored full regulatory standing; secured regulatory approval for $1.2B grid modernization bond.
+              </div>
+              <a href="case-study-grid-operator.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 5 -->
+        <div class="col-md-6 col-lg-4" data-case-category="finance">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-fund-esg.jpg" alt="Global Fund Manager ESG Disclosure Defensibility" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-warning-subtle text-warning fw-semibold">Asset Management</span>
+                <span class="small text-muted">5-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Global Fund Manager ESG Disclosure Defensibility</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Threat of regulatory greenwashing investigation regarding EU SFDR Article 8 fund categorization and carbon metric calculations.<br><br>
+                <strong>Solution:</strong> Conducted comprehensive portfolio ESG due diligence audit, drafted defensible disclosure frameworks, and aligned fund prospectus disclosures.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Complete regulatory validation by European supervisory authorities without fund reclassification.
+              </div>
+              <a href="case-study-fund-esg.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 6 -->
+        <div class="col-md-6 col-lg-4" data-case-category="tech">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-fintech-ai.jpg" alt="Cross-Border FinTech AI Governance" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-success-subtle text-success fw-semibold">Cross-Border FinTech</span>
+                <span class="small text-muted">7-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Cross-Border Payments AI Governance & Risk</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Integration of automated credit and fraud algorithms prompted regulatory inquiries regarding algorithmic bias and systemic stability.<br><br>
+                <strong>Solution:</strong> Established dedicated Board Technology & AI Oversight Committee, model risk management (SR 11-7) protocol, and transparency reporting.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Secured dual banking license approvals in UK and EU jurisdictions.
+              </div>
+              <a href="case-study-fintech-ai.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 6B (Enterprise Tech Triple Completion) -->
+        <div class="col-md-6 col-lg-4" data-case-category="tech">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-cloud-cybersec.jpg" alt="Global Cloud Infrastructure SEC Cyber Disclosure Protocol" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-success-subtle text-success fw-semibold">Cybersecurity & Cloud</span>
+                <span class="small text-muted">8-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Global Cloud Infrastructure SEC Cyber Disclosure Protocol</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> New SEC Item 106 disclosure mandate required rapid board oversight recalibration following suspected nation-state network probing.<br><br>
+                <strong>Solution:</strong> Formulated four-business-day materiality determination tree, trained board audit committee on incident thresholds, and established privileged forensics.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> 100% SEC compliance clearance with zero regulatory enforcement inquiries or shareholder disclosure challenges.
+              </div>
+              <a href="case-study-cloud-cybersec.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 7 -->
+        <div class="col-md-6 col-lg-4" data-case-category="healthcare">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/about-regulatory-desk.jpg" alt="Biopharma Compliance Case" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-info-subtle text-info fw-semibold">Global BioPharma</span>
+                <span class="small text-muted">10-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Global BioPharma FDA Consent Decree Resolution</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Dual manufacturing facility citation threatening commercial distribution licenses across US and European pharmaceutical markets.<br><br>
+                <strong>Solution:</strong> Installed independent quality oversight monitor reporting directly to board, recalibrated cGMP compliance trees, and automated batch audit tracking.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> FDA warning letter lifted 4 months ahead of schedule; zero product recall orders issued.
+              </div>
+              <a href="case-study-biopharma-fda.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 7B (Healthcare Triple Completion) -->
+        <div class="col-md-6 col-lg-4" data-case-category="healthcare">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-medtech-trials.jpg" alt="Medical Device Clinical Compliance" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-info-subtle text-info fw-semibold">Medical Devices & IVD</span>
+                <span class="small text-muted">9-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">EU MDR Medical Device Board Attestation & Audit</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Complex transition from MDD to EU Medical Device Regulation (MDR 2017/745) threatened market withdrawal of 18 diagnostic product lines.<br><br>
+                <strong>Solution:</strong> Restructured clinical oversight committee, established post-market surveillance audit trails, and unified notified-body documentation matrices.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> 100% portfolio recertification with zero commercial distribution delays across 27 EU nations.
+              </div>
+              <a href="case-study-medtech-trials.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 8 -->
+        <div class="col-md-6 col-lg-4" data-case-category="industrial">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-defense-itar.jpg" alt="Aerospace Defense ITAR Compliance" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary fw-semibold">Aerospace & Defense</span>
+                <span class="small text-muted">11-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Tier-1 Defense Contractor ITAR & Export Controls</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Classified technology transfer audit uncovered vulnerabilities in cross-border joint venture supply chain data access.<br><br>
+                <strong>Solution:</strong> Instituted defense security committee charter, air-gapped classified engineering assets, and established continuous export license screening.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Retained all prime government defense contracts with full Department of State compliance sign-off.
+              </div>
+              <a href="case-study-defense-itar.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 8B (Energy & Manufacturing Triple Completion) -->
+        <div class="col-md-6 col-lg-4" data-case-category="industrial">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-clean-energy.jpg" alt="Offshore Wind Consortium Critical Supply Chain Due Diligence" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary fw-semibold">Clean Energy & Minerals</span>
+                <span class="small text-muted">7-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Offshore Wind Consortium Critical Supply Chain Due Diligence</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Multi-billion dollar offshore renewable energy project encountered severe scrutiny regarding Uyghur Forced Labor Prevention Act (UFLPA) raw material traceability.<br><br>
+                <strong>Solution:</strong> Instituted forensic tier-3 supplier mapping, deployed satellite audit verification, and established board sustainability audit sub-committee.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Unconditional customs clearance on $850M turbine shipments with full ESG lender syndicate approval.
+              </div>
+              <a href="case-study-clean-energy.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 9 -->
+        <div class="col-md-6 col-lg-4" data-case-category="finance">
+          <div class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/case-buyout-abac.jpg" alt="Private Equity Anti-Bribery Compliance" class="w-100 object-cover" style="height: 220px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-warning-subtle text-warning fw-semibold">Private Equity & Buyout</span>
+                <span class="small text-muted">6-Month Mandate</span>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Pan-European Buyout Fund Anti-Bribery (ABAC) Overhaul</h3>
+              <p class="small text-muted mb-3 flex-grow-1">
+                <strong>Challenge:</strong> Post-acquisition discovery of third-party agent corruption exposure across emerging market portfolio subsidiaries.<br><br>
+                <strong>Solution:</strong> Deployed forensic transaction review, severed high-risk intermediary relationships, and integrated standardized FCPA/UKBA compliance matrices.
+              </p>
+              <div class="p-3 bg-surface rounded border small mb-3">
+                <strong class="text-warning">Illustrative Outcome:</strong> Voluntary disclosure accepted by regulatory authorities without prosecution or financial forfeiture.
+              </div>
+              <a href="case-study-buyout-abac.html" class="gov-card-link mt-auto">Read Case Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-secondary mt-5 text-center small">
+        <i class="bi bi-info-circle me-1 text-warning"></i>
+        <strong>Compliance Disclosure:</strong> All case scenarios represent anonymized, illustrative composite consulting scenarios based on standard advisory protocols. Client names and proprietary data remain strictly confidential under NDA covenants.
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement Methodology Section -->
+  <section class="py-5 bg-surface border-top border-bottom">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span class="section-tag">Fiduciary Execution Framework</span>
+        <h2 class="section-title">How Governora Executes Complex Interventions</h2>
+        <div class="gold-divider mx-auto"></div>
+        <p class="section-subtitle">
+          Every corporate advisory mandate follows a legally fortified four-stage engagement cadence engineered to withstand scrutiny from institutional investors, regulatory examiners, and external auditors.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card p-4 h-100">
+            <div class="gov-card-icon"><i class="bi bi-search"></i></div>
+            <div class="small fw-bold text-warning mb-1">Phase 01</div>
+            <h3 class="h5 fw-bold mb-2">Diagnostic Scoping</h3>
+            <p class="small text-muted mb-0">Independent review of board committee minutes, regulatory correspondence, and internal control frameworks under strict privilege.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card p-4 h-100">
+            <div class="gov-card-icon"><i class="bi bi-diagram-3"></i></div>
+            <div class="small fw-bold text-warning mb-1">Phase 02</div>
+            <h3 class="h5 fw-bold mb-2">Charter Recalibration</h3>
+            <p class="small text-muted mb-0">Formulating defensible delegation matrices, committee charters, and decision authority protocols aligned with Delaware & UK corporate codes.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card p-4 h-100">
+            <div class="gov-card-icon"><i class="bi bi-shield-check"></i></div>
+            <div class="small fw-bold text-warning mb-1">Phase 03</div>
+            <h3 class="h5 fw-bold mb-2">Stress Simulation</h3>
+            <p class="small text-muted mb-0">Simulating adversarial activist campaigns, hostile regulatory inquiries, and boardroom crisis scenarios to pressure-test oversight defensibility.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="gov-card p-4 h-100">
+            <div class="gov-card-icon"><i class="bi bi-award"></i></div>
+            <div class="small fw-bold text-warning mb-1">Phase 04</div>
+            <h3 class="h5 fw-bold mb-2">Formal Attestation</h3>
+            <p class="small text-muted mb-0">Issuing independent fiduciary assurance reports, board effectiveness opinions, and compliance attestation documentation for supervisory submission.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confidential Advisory Callout CTA -->
+  <section class="py-5 position-relative overflow-hidden text-center text-white" style="background: linear-gradient(135deg, #0A1220 0%, #101D32 100%);">
+    <div class="container py-4 position-relative">
+      <span class="badge bg-warning/20 text-warning px-3 py-1 rounded-pill mb-3 fw-semibold border border-warning/40">
+        <i class="bi bi-lock-fill me-1"></i> Privileged Fiduciary Engagement
+      </span>
+      <h2 class="display-6 fw-bold text-white mb-3">Facing a High-Stakes Governance or Regulatory Challenge?</h2>
+      <div class="gold-divider mx-auto mb-3"></div>
+      <p class="lead text-slate-300 max-w-2xl mx-auto mb-4">
+        Governora senior partners are available for confidential, conflict-checked consultations under strict non-disclosure covenants.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="contact.html" class="btn btn-gov-primary btn-lg shadow-lg">
+          <span>Initiate Confidential Inquiry</span>
+          <i class="bi bi-arrow-right icon-flip-rtl"></i>
+        </a>
+        <a href="services.html" class="btn btn-outline-light btn-lg">
+          <span>Explore Practice Areas</span>
+          <i class="bi bi-briefcase ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Global Footer -->
+  <footer class="gov-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4">
+          <a class="gov-brand mb-3 d-inline-flex" href="index.html">
+            <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span><span class="text-white">GOVERN</span><span class="gold">ORA</span></span>
+          </a>
+          <p class="text-secondary small mb-4">
+            Governora is an international corporate governance, regulatory compliance, and board advisory consulting practice. We safeguard enterprise reputation, ensure strict audit readiness, and optimize board effectiveness.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Practices</h5>
+          <ul class="gov-footer-links">
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Board Evaluation</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Risk Management</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> SOX Compliance</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Ethics & Conduct</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> ESG Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Company</h5>
+          <ul class="gov-footer-links">
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-warning"></i> About Practice</a></li>
+            <li><a href="case-studies.html"><i class="bi bi-chevron-right small text-warning"></i> Client Engagements</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small text-warning"></i> Policy Insights</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small text-warning"></i> Advisory Packages</a></li>
+            <li><a href="coming-soon.html"><i class="bi bi-chevron-right small text-warning"></i> Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Regulatory Bulletin</h5>
+          <p class="text-secondary small mb-3">Subscribe to our monthly global compliance and fiduciary duty brief.</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control gov-form-control" placeholder="corporate@email.com" required aria-label="Corporate Email">
+              <button class="btn btn-gov-primary" type="submit"><i class="bi bi-send"></i></button>
+            </div>
+            <div class="newsletter-feedback"></div>
+          </form>
+          <div class="small text-secondary mt-3">
+            <i class="bi bi-shield-lock-fill text-warning me-1"></i> Strictly confidential. No unsolicited contact.
+          </div>
+        </div>
+      </div>
+
+      <div class="gov-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Governora Advisory Partners LLP. All rights reserved. Premium enterprise template.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-secondary small text-decoration-none">Terms of Engagement</a>
+          <a href="404.html" class="text-secondary small text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="gov-back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Core Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+</body>
+</html>

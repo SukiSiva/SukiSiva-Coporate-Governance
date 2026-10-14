@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('governora_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          document.documentElement.classList.remove('dark');
+        }
+        var r = localStorage.getItem('governora_rtl');
+        if (r === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Our Advisory Team | Governora - Corporate Governance & Compliance Advisory</title>
+  <meta name="description" content="Schedule a confidential corporate governance, regulatory compliance, or board evaluation consultation with Governora senior practice directors.">
+  <!-- Favicon / Website Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      corePlugins: { preflight: false, collapse: false },
+      theme: {
+        extend: {
+          colors: {
+            govNavy: '#101D32',
+            govGold: '#C6A66B',
+            govDark: '#0A1220'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg gov-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <a class="gov-brand navbar-brand" href="index.html">
+        <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span>GOVERN<span class="gold">ORA</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#govNav" aria-controls="govNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="govNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-building me-2"></i> Home 1 &bull; Corporate Advisory</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-shield-lock me-2"></i> Home 2 &bull; Regulatory & Risk</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <!-- Theme Switcher -->
+          <button class="gov-tool-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun"></i>
+          </button>
+          <!-- RTL Switcher -->
+          <button class="gov-tool-btn rtl-toggle-btn fw-bold" title="Switch to RTL Mode (Right-to-Left)" aria-label="Switch to RTL Mode">
+            <span class="dir-badge">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-gov-primary">
+            <span>Book Advisory</span>
+            <i class="bi bi-arrow-right icon-flip-rtl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<main>
+  <!-- Page Header Hero with 4K Realistic Background -->
+  <section class="position-relative text-white py-5 overflow-hidden border-bottom text-center" style="background: linear-gradient(135deg, rgba(10, 18, 32, 0.88) 0%, rgba(16, 29, 50, 0.84) 100%), url('assets/images/contact-hero-bg.jpg') center/cover no-repeat; min-height: 380px;">
+    <div class="container py-md-3 position-relative z-1">
+      <div class="mx-auto" style="max-width: 860px;">
+        <h1 class="display-5 fw-bold mb-3 text-white text-uppercase" style="letter-spacing: 0.03em; line-height: 1.25; font-size: calc(1.5rem + 1.5vw);">
+          Initiate Boardroom Consultation
+        </h1>
+        <div class="gold-divider mx-auto my-3"></div>
+        <p class="lead text-slate-200 mx-auto mb-4" style="max-width: 760px; font-size: 1.1rem; line-height: 1.7; font-weight: 400;">
+          Engage Governora senior practice directors for an independent, confidential discussion regarding board evaluations, regulatory remediation, or crisis compliance.
+        </p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center gap-4 pt-3 border-top border-white/15 mx-auto" style="max-width: 960px;">
+        <div class="d-flex align-items-center gap-2 text-slate-200 small">
+          <i class="bi bi-check-circle-fill text-warning"></i>
+          <span>Conflict Check within 2 Business Hours</span>
+        </div>
+        <div class="d-flex align-items-center gap-2 text-slate-200 small">
+          <i class="bi bi-lock-fill text-warning"></i>
+          <span>Strict Attorney-Client &amp; Fiduciary NDA Standards</span>
+        </div>
+        <div class="d-flex align-items-center gap-2 text-slate-200 small">
+          <i class="bi bi-shield-check text-warning"></i>
+          <span>Direct Practice Partner Oversight</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Executive Dispatch Channels -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Channel 1: Practice Dispatch Email -->
+        <div class="col-md-4">
+          <div class="gov-card p-4">
+            <div class="gov-card-icon"><i class="bi bi-envelope-check-fill"></i></div>
+            <span class="badge bg-warning-subtle text-warning border border-warning-subtle align-self-start mb-2 px-2.5 py-1">Direct Partner Inbox</span>
+            <h3 class="h5 fw-bold mb-2">Confidential Practice Dispatch</h3>
+            <p class="small text-muted mb-3">
+              Direct priority channel monitored by our senior practice operations desk for formal scoping inquiries.
+            </p>
+            <div class="mt-auto">
+              <a href="mailto:advisory@governora.com" class="fw-semibold text-warning text-decoration-none d-block mb-1">
+                <i class="bi bi-envelope me-1"></i> advisory@governora.com
+              </a>
+              <a href="mailto:chair@governora.com" class="small text-muted text-decoration-none d-block">
+                <i class="bi bi-shield me-1"></i> chair@governora.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 2: Switchboard & Crisis Desk -->
+        <div class="col-md-4">
+          <div class="gov-card p-4">
+            <div class="gov-card-icon"><i class="bi bi-telephone-fill"></i></div>
+            <span class="badge bg-danger-subtle text-danger border border-danger-subtle align-self-start mb-2 px-2.5 py-1">24/7 Crisis Incident Desk</span>
+            <h3 class="h5 fw-bold mb-2">Executive Switchboard</h3>
+            <p class="small text-muted mb-3">
+              Immediate connection to our New York headquarters switchboard or active special committee incident hotline.
+            </p>
+            <div class="mt-auto">
+              <a href="tel:+12128904400" class="fw-semibold text-warning text-decoration-none d-block mb-1">
+                <i class="bi bi-telephone me-1"></i> +1 (212) 890-4400
+              </a>
+              <span class="small text-danger d-block">
+                <i class="bi bi-exclamation-octagon me-1"></i> Emergency Hotline: +1 (212) 890-4499
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 3: Global Headquarters Location -->
+        <div class="col-md-4">
+          <div class="gov-card p-4">
+            <div class="gov-card-icon"><i class="bi bi-building"></i></div>
+            <span class="badge bg-info-subtle text-info border border-info-subtle align-self-start mb-2 px-2.5 py-1">New York HQ Chambers</span>
+            <h3 class="h5 fw-bold mb-2">Wall Street Chambers</h3>
+            <p class="small text-muted mb-3">
+              100 Wall Street, 24th Floor<br>Financial District, New York, NY 10005
+            </p>
+            <div class="mt-auto">
+              <span class="small text-muted d-block mb-2">
+                <i class="bi bi-clock me-1"></i> Mon &ndash; Fri: 08:00 &ndash; 18:00 EST
+              </span>
+              <a href="https://maps.google.com/?q=100+Wall+Street,+New+York,+NY+10005" target="_blank" rel="noopener noreferrer" class="gov-card-link text-decoration-none p-0 mt-0">
+                <span>View Google Maps Location</span>
+                <i class="bi bi-box-arrow-up-right small"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Consultation Form & Practice Overview Section -->
+  <section class="py-5 bg-surface border-top border-bottom">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <!-- Form Column -->
+        <div class="col-lg-7">
+          <div class="gov-card h-auto p-4 p-md-5 shadow-sm">
+            <span class="section-tag mb-2">Confidential Submission</span>
+            <h2 class="h3 fw-bold mb-2">Request Boardroom Consultation</h2>
+            <p class="small text-muted mb-4">
+              Please outline your preliminary advisory scope below. All inquiries are protected under Governora's strict mutual non-disclosure covenants and reviewed directly by practice directors.
+            </p>
+
+            <form class="needs-validation" novalidate data-gov-form id="consultationForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="gov-form-label" for="consultationFullName">Full Name *</label>
+                  <input type="text" id="consultationFullName" name="fullName" class="form-control gov-form-control" required placeholder="e.g. Arthur Pendelton" pattern="^[A-Za-z\s.'-]+$" autocomplete="name" title="Only alphabetic letters and spaces are allowed">
+                  <div class="gov-form-feedback">Please enter your full name (letters only).</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="gov-form-label" for="consultationEmail">Corporate Email *</label>
+                  <input type="email" id="consultationEmail" name="email" class="form-control gov-form-control" required placeholder="e.g. a.pendelton@enterprise.com" autocomplete="email">
+                  <div class="gov-form-feedback">Please enter a valid corporate email.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="gov-form-label" for="consultationCompany">Company / Organization *</label>
+                  <input type="text" id="consultationCompany" name="company" class="form-control gov-form-control" required placeholder="e.g. Global Logistics Holdings Corp">
+                  <div class="gov-form-feedback">Please enter your organization name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="gov-form-label" for="consultationPhone">Direct Contact Number *</label>
+                  <input type="tel" id="consultationPhone" name="phone" inputmode="numeric" class="form-control gov-form-control" required placeholder="e.g. 12125550199" pattern="^[0-9]+$" autocomplete="tel" title="Only numbers are allowed">
+                  <div class="gov-form-feedback">Please enter your contact number (numbers only).</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="gov-form-label">Primary Advisory Interest *</label>
+                  <select class="form-select gov-form-control" required>
+                    <option value="">Select advisory practice area...</option>
+                    <option>Corporate Governance Advisory</option>
+                    <option>Board Effectiveness & Evaluation</option>
+                    <option>Regulatory Compliance & Remediation</option>
+                    <option>Enterprise Risk Management (ERM)</option>
+                    <option>SOX 404 & Internal Audit Readiness</option>
+                    <option>Whistleblower & Ethics Systems</option>
+                    <option>Special Committee Independent Inquiry</option>
+                    <option>Custom Retainer Retainer Scope</option>
+                  </select>
+                  <div class="gov-form-feedback">Please select your primary interest.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="gov-form-label">Board / Executive Role *</label>
+                  <select class="form-select gov-form-control" required>
+                    <option value="">Select executive role...</option>
+                    <option>Board Chair / Lead Independent Director</option>
+                    <option>Audit Committee Chair / Member</option>
+                    <option>Nominating & Governance Chair</option>
+                    <option>Chief Executive Officer (CEO)</option>
+                    <option>General Counsel / Corporate Secretary</option>
+                    <option>Chief Risk / Compliance Officer</option>
+                    <option>Other Institutional Representative</option>
+                  </select>
+                  <div class="gov-form-feedback">Please select your executive role.</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="gov-form-label">Engagement Overview / Scope Details *</label>
+                  <textarea class="form-control gov-form-control" rows="4" required placeholder="Please outline preliminary timeline, jurisdictional focus, regulatory mandates, or specific committee requirements..."></textarea>
+                  <div class="gov-form-feedback">Please provide brief overview details.</div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="consentCheck" required>
+                    <label class="form-check-label small text-muted" for="consentCheck">
+                      I confirm this inquiry represents bona fide institutional interest and consent to preliminary conflict-check review under Governora's <a href="#" class="text-warning text-decoration-none">Privacy & Fiduciary Terms</a>.
+                    </label>
+                    <div class="gov-form-feedback">Consent confirmation is required.</div>
+                  </div>
+                </div>
+
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn btn-gov-primary w-100 py-3">
+                    <span>Submit Confidential Request</span>
+                    <i class="bi bi-shield-check ms-2"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Status message container -->
+              <div class="form-status-msg" style="display:none;"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Side: Engagement Protocol & Headquarters Details -->
+        <div class="col-lg-5">
+          <!-- Card A: Client Onboarding Protocol -->
+          <div class="gov-card h-auto p-4 mb-4">
+            <span class="section-tag mb-2">Fiduciary Standards</span>
+            <h3 class="h5 fw-bold mb-3">Client Onboarding Protocol</h3>
+            
+            <div class="d-flex align-items-start gap-3 mb-3 pb-3 border-bottom">
+              <div class="text-warning fs-4"><i class="bi bi-1-circle-fill"></i></div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Conflict Clearance</h4>
+                <p class="small text-muted mb-0">Every inquiry undergoes mandatory cross-referencing against our global conflict registry within 2 hours.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-3 pb-3 border-bottom">
+              <div class="text-warning fs-4"><i class="bi bi-2-circle-fill"></i></div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Mutual Fiduciary NDA</h4>
+                <p class="small text-muted mb-0">Institutional non-disclosure agreements executed before sensitive board briefing materials are exchanged.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <div class="text-warning fs-4"><i class="bi bi-3-circle-fill"></i></div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Direct Partner Conference</h4>
+                <p class="small text-muted mb-0">Confidential scoping session led directly by a Senior Practice Partner in New York or via encrypted channel.</p>
+              </div>
+            </div>
+
+            <div class="p-3 bg-surface rounded border mt-2">
+              <div class="d-flex align-items-center gap-2 text-warning small fw-semibold mb-1">
+                <i class="bi bi-shield-lock-fill"></i>
+                <span>Enterprise Security Certified</span>
+              </div>
+              <p class="small text-muted mb-0">
+                SOC-2 Type II compliant communications and ISO 27001 data isolation protect all client interactions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card B: Office Chambers Quick Summary -->
+          <div class="gov-card h-auto p-4">
+            <span class="section-tag mb-2">Global Headquarters</span>
+            <h3 class="h5 fw-bold mb-3">New York Chambers</h3>
+            
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <div class="text-warning fs-5"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <p class="small text-muted mb-0">
+                  <strong>Governora Advisory Partners LLP</strong><br>
+                  100 Wall Street, 24th Floor<br>
+                  Financial District Corporate Center<br>
+                  New York, NY 10005, United States
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="text-warning fs-5"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <p class="small text-muted mb-0">
+                  <strong>Operating Hours:</strong><br>
+                  Monday &ndash; Friday: 08:00 &ndash; 18:00 EST<br>
+                  Crisis Incident Desk: 24/7/365 Uninterrupted
+                </p>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=100+Wall+Street,+New+York,+NY+10005" target="_blank" rel="noopener noreferrer" class="btn btn-gov-outline w-100 py-2.5">
+              <i class="bi bi-compass me-1"></i>
+              <span>Launch Directions in Google Maps</span>
+              <i class="bi bi-box-arrow-up-right small ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Regional Hubs Section -->
+  <section class="py-5">
+    <div class="container py-2">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <span class="section-tag">Global Presence</span>
+        <h2 class="section-title">International Governance Chambers</h2>
+        <div class="gold-divider mx-auto"></div>
+        <p class="text-muted small">
+          Delivering independent fiduciary counsel across premier international regulatory jurisdictions.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- New York Hub -->
+        <div class="col-md-4">
+          <div class="gov-card p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h3 class="h5 fw-bold mb-0">New York</h3>
+              <span class="badge bg-warning-subtle text-warning border border-warning-subtle">Americas HQ</span>
+            </div>
+            <p class="small text-muted mb-2">100 Wall Street, 24th Floor<br>New York, NY 10005</p>
+            <p class="small text-muted mb-3"><i class="bi bi-clock me-1 text-warning"></i> EST (UTC&minus;5)</p>
+            <div class="mt-auto pt-3 border-top">
+              <span class="small fw-semibold text-warning"><i class="bi bi-telephone me-1"></i> +1 (212) 890-4400</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- London Hub -->
+        <div class="col-md-4">
+          <div class="gov-card p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h3 class="h5 fw-bold mb-0">London</h3>
+              <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">EMEA Hub</span>
+            </div>
+            <p class="small text-muted mb-2">30 St Mary Axe, 18th Floor<br>London EC3A 8EP, United Kingdom</p>
+            <p class="small text-muted mb-3"><i class="bi bi-clock me-1 text-warning"></i> GMT / BST (UTC+0)</p>
+            <div class="mt-auto pt-3 border-top">
+              <span class="small fw-semibold text-warning"><i class="bi bi-telephone me-1"></i> +44 20 7946 0920</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Singapore Hub -->
+        <div class="col-md-4">
+          <div class="gov-card p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h3 class="h5 fw-bold mb-0">Singapore</h3>
+              <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">APAC Desk</span>
+            </div>
+            <p class="small text-muted mb-2">Marina Bay Financial Centre, Tower 1<br>Singapore 018981</p>
+            <p class="small text-muted mb-3"><i class="bi bi-clock me-1 text-warning"></i> SGT (UTC+8)</p>
+            <div class="mt-auto pt-3 border-top">
+              <span class="small fw-semibold text-warning"><i class="bi bi-telephone me-1"></i> +65 6712 3400</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Google Map Location Section -->
+  <section class="py-5 bg-surface border-top border-bottom" id="chambersMapSection">
+    <div class="container py-2">
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-end gap-3 mb-3">
+        <div>
+          <span class="section-tag mb-1">Location &amp; Access</span>
+          <h2 class="h3 fw-bold mb-0">Chambers Map &amp; Directions</h2>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-gov-primary active btn-sm px-3" data-map-location="newyork">
+            <i class="bi bi-geo-alt-fill me-1"></i> New York HQ
+          </button>
+          <button class="btn btn-gov-outline btn-sm px-3" data-map-location="london">
+            <i class="bi bi-geo-alt me-1"></i> London
+          </button>
+          <button class="btn btn-gov-outline btn-sm px-3" data-map-location="singapore">
+            <i class="bi bi-geo-alt me-1"></i> Singapore
+          </button>
+        </div>
+      </div>
+      <div class="gold-divider mb-3"></div>
+
+      <!-- Map Card (Filled Completely with Zero White Space) -->
+      <div class="gov-card p-0 overflow-hidden border-warning/30 shadow-sm">
+        <div style="height: 380px; width: 100%; position: relative; overflow: hidden;">
+          <iframe 
+            id="contactMapIframe"
+            class="gov-map-frame"
+            src="https://maps.google.com/maps?q=100+Wall+Street,+New+York,+NY+10005&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            width="100%" 
+            height="380" 
+            style="width: 100% !important; height: 100% !important; min-height: 380px !important; display: block !important; border: 0 !important; margin: 0 !important; padding: 0 !important;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Governora Advisory Partners Global Headquarters Location Map">
+          </iframe>
+        </div>
+        
+        <!-- Compact Map Info Bar -->
+        <div class="p-3 px-md-4 bg-card border-top">
+          <div class="row g-2 align-items-center justify-content-between">
+            <div class="col-md-8">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="text-warning fs-5"><i class="bi bi-pin-map-fill"></i></span>
+                <span class="fw-bold small" id="mapAddressTitle">Global Headquarters &bull; Financial District</span>
+              </div>
+              <p class="small text-muted mb-0" id="mapAddressText">100 Wall Street, 24th Floor, New York, NY 10005, United States</p>
+              <p class="small text-muted mb-0" id="mapTransitText"><i class="bi bi-train-front me-1 text-warning"></i> Transit: Subway 2, 3 (Wall St) &bull; J, Z (Broad St) &bull; 4, 5 (Wall St)</p>
+            </div>
+            <div class="col-md-4 text-md-end mt-2 mt-md-0">
+              <a href="https://maps.google.com/?q=100+Wall+Street,+New+York,+NY+10005" target="_blank" rel="noopener noreferrer" class="btn btn-gov-primary btn-sm px-3 py-1.5" id="mapDirectionsLink">
+                <i class="bi bi-compass me-1"></i>
+                <span>Get Directions</span>
+                <i class="bi bi-box-arrow-up-right small ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisory Inquiry FAQ Section -->
+  <section class="py-5 bg-surface border-top">
+    <div class="container py-2">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <span class="section-tag">Engagement Diligence</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="gold-divider mx-auto"></div>
+        <p class="text-muted small">
+          Key considerations regarding confidentiality, conflict clearances, and engagement terms.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion gov-accordion" id="contactFaq">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  How does Governora guarantee independence and prevent conflicts of interest?
+                </button>
+              </h3>
+              <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  Governora operates as a pure-play corporate governance and board advisory practice. We perform no statutory audit services, investment banking, broker-dealer underwriting, or commercial debt placements. Every new matter undergoes automated and partner-level conflict checks against our global client registry prior to engagement acceptance.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  What is the standard response time for board consultation inquiries?
+                </button>
+              </h3>
+              <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  Prospective inquiries received through our Confidential Practice Dispatch receive an initial conflict verification and response within two business hours. In urgent matters involving regulatory enforcement actions or special committee crises, our 24/7 Crisis Incident Desk initiates senior partner contact immediately.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  Are preliminary conversations protected under non-disclosure agreements?
+                </button>
+              </h3>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  Yes. All preliminary dialogues, corporate identities, and scoping discussions are handled under strict institutional confidentiality rules. Prior to any disclosure of board materials or audit committee data, our practice executes a mutual fiduciary Non-Disclosure Agreement (NDA).
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                  Do you provide on-site board evaluation sessions globally?
+                </button>
+              </h3>
+              <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  Yes. While virtual board evaluations and regulatory advisory can be conducted over encrypted executive portals, our practice directors regularly travel on-site to conduct confidential board interviews, executive retreat facilitations, and regulatory hearings worldwide.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Global Footer -->
+  <footer class="gov-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4">
+          <a class="gov-brand mb-3 d-inline-flex" href="index.html">
+            <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span><span class="text-white">GOVERN</span><span class="gold">ORA</span></span>
+          </a>
+          <p class="text-secondary small mb-4">
+            Governora is an international corporate governance, regulatory compliance, and board advisory consulting practice. We safeguard enterprise reputation, ensure strict audit readiness, and optimize board effectiveness.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Practices</h5>
+          <ul class="gov-footer-links">
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Board Evaluation</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Risk Management</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> SOX Compliance</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Ethics & Conduct</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> ESG Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Company</h5>
+          <ul class="gov-footer-links">
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-warning"></i> About Practice</a></li>
+            <li><a href="case-studies.html"><i class="bi bi-chevron-right small text-warning"></i> Client Engagements</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small text-warning"></i> Policy Insights</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small text-warning"></i> Advisory Packages</a></li>
+            <li><a href="coming-soon.html"><i class="bi bi-chevron-right small text-warning"></i> Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Regulatory Bulletin</h5>
+          <p class="text-secondary small mb-3">Subscribe to our monthly global compliance and fiduciary duty brief.</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control gov-form-control" placeholder="corporate@email.com" required aria-label="Corporate Email">
+              <button class="btn btn-gov-primary" type="submit"><i class="bi bi-send"></i></button>
+            </div>
+            <div class="newsletter-feedback"></div>
+          </form>
+          <div class="small text-secondary mt-3">
+            <i class="bi bi-shield-lock-fill text-warning me-1"></i> Strictly confidential. No unsolicited contact.
+          </div>
+        </div>
+      </div>
+
+      <div class="gov-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Governora Advisory Partners LLP. All rights reserved. Premium enterprise template.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-secondary small text-decoration-none">Terms of Engagement</a>
+          <a href="404.html" class="text-secondary small text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="gov-back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Core Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+</body>
+</html>

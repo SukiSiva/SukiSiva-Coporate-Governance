@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 54" width="320" height="54">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101D32" />
+      <stop offset="100%" stop-color="#1A2E4C" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="3" width="48" height="48" rx="8" fill="url(#shieldGrad)" stroke="#C6A66B" stroke-width="1.75"/>
+  <g transform="translate(13, 12) scale(1.625)">
+    <path fill="#C6A66B" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.464 9.99 1.579 2.065 3.444 3.018 4.395 3.315h.001c.951-.297 2.816-1.25 4.395-3.315 1.677-2.195 3.06-5.513 2.464-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/>
+  </g>
+  <text x="62" y="37" font-family="'Cinzel', Georgia, serif" font-size="28" font-weight="700" letter-spacing="0.5" fill="#101D32">GOVERN<tspan fill="#C6A66B">ORA</tspan></text>
+</svg>

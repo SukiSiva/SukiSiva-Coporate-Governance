@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('governora_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          document.documentElement.classList.remove('dark');
+        }
+        var r = localStorage.getItem('governora_rtl');
+        if (r === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policy Briefings & Boardroom Insights | Governora - Corporate Governance & Compliance Advisory</title>
+  <meta name="description" content="Explore latest regulatory compliance, SEC disclosures, ESG oversight, and corporate governance thought leadership.">
+  <!-- Favicon / Website Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      corePlugins: { preflight: false, collapse: false },
+      theme: {
+        extend: {
+          colors: {
+            govNavy: '#101D32',
+            govGold: '#C6A66B',
+            govDark: '#0A1220'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg gov-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <a class="gov-brand navbar-brand" href="index.html">
+        <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span>GOVERN<span class="gold">ORA</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#govNav" aria-controls="govNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="govNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="index.html"><i class="bi bi-building me-2"></i> Home 1  Corporate Advisory</a></li>
+              <li><a class="dropdown-item " href="home-2.html"><i class="bi bi-shield-lock me-2"></i> Home 2  Regulatory & Risk</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <!-- Theme Switcher -->
+          <button class="gov-tool-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun"></i>
+          </button>
+          <!-- RTL Switcher -->
+          <button class="gov-tool-btn rtl-toggle-btn fw-bold" title="Switch to RTL Mode (Right-to-Left)" aria-label="Switch to RTL Mode">
+            <span class="dir-badge">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-gov-primary">
+            <span>Book Advisory</span>
+            <i class="bi bi-arrow-right icon-flip-rtl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<main>
+  <!-- Page Header Hero with 4K Realistic Background -->
+  <section class="position-relative text-white py-5 overflow-hidden border-bottom text-center" style="background: linear-gradient(135deg, rgba(10, 18, 32, 0.88) 0%, rgba(16, 29, 50, 0.84) 100%), url('assets/images/blog-hero-bg.jpg') center/cover no-repeat; min-height: 380px;">
+    <div class="container py-md-3 position-relative z-1">
+      <div class="mx-auto" style="max-width: 860px;">
+        <h1 class="display-5 fw-bold mb-3 text-white text-uppercase" style="letter-spacing: 0.03em; line-height: 1.25; font-size: calc(1.5rem + 1.5vw);">
+          Policy Briefings &amp; Boardroom Insights
+        </h1>
+        <div class="gold-divider mx-auto my-3"></div>
+        <p class="lead text-slate-200 mx-auto mb-0" style="max-width: 760px; font-size: 1.1rem; line-height: 1.7; font-weight: 400;">
+          Authoritative analysis on corporate legal trends, cross-border regulatory directives, board evaluations, and risk governance written by practice partners.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Category Filters -->
+  <section class="py-4 border-bottom bg-card">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+          <div class="input-group">
+            <span class="input-group-text bg-surface border-end-0"><i class="bi bi-search text-muted"></i></span>
+            <input type="text" id="blogSearchInput" class="form-control gov-form-control border-start-0" placeholder="Search briefings, regulations, or keywords...">
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+          <div class="d-flex flex-nowrap gap-2 justify-content-start justify-content-lg-end align-items-center overflow-x-auto pb-1 pb-lg-0" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <button class="btn btn-gov-primary active btn-sm text-nowrap" data-blog-filter="all">All Topics</button>
+            <button class="btn btn-gov-outline btn-sm text-nowrap" data-blog-filter="sec">SEC & Disclosure</button>
+            <button class="btn btn-gov-outline btn-sm text-nowrap" data-blog-filter="esg">ESG Governance</button>
+            <button class="btn btn-gov-outline btn-sm text-nowrap" data-blog-filter="cyber">Cyber Risk</button>
+            <button class="btn btn-gov-outline btn-sm text-nowrap" data-blog-filter="ethics">Ethics & Whistleblower</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Article Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="gov-card p-0 overflow-hidden mb-5 border-warning/40">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6">
+            <img src="assets/images/blog-1.jpg" alt="Featured Insight" class="w-100 h-100 object-cover" style="min-height: 320px;">
+          </div>
+          <div class="col-lg-6 p-4 p-lg-5">
+            <span class="badge bg-warning text-dark fw-bold mb-2">Featured Policy Briefing</span>
+            <div class="small text-muted mb-2">October 2026 &bull; Regulatory Remediation Practice &bull; 8 Min Read</div>
+            <h2 class="h3 fw-bold mb-3"><a href="blog-details.html" class="text-reset text-decoration-none">Navigating 2027 Material Risk Disclosure Shifts: SEC vs. EU CSRD</a></h2>
+            <p class="text-muted mb-4">
+              Cross-border corporate groups face conflicting disclosure frameworks as European CSRD double-materiality rules collide with evolving SEC safe-harbor requirements. Here is how leading general counsels are harmonizing reporting pipelines.
+            </p>
+            <a href="blog-details.html" class="btn btn-gov-primary">
+              <span>Read Full Analysis</span>
+              <i class="bi bi-arrow-right icon-flip-rtl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="row g-4" id="blogArticlesGrid">
+        <!-- Article 1 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="esg">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-fiduciary-sustainability.jpg" alt="ESG Oversight" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-success-subtle text-success small align-self-start mb-2">ESG Governance</span>
+              <div class="small text-muted mb-2">September 24, 2026 &bull; 6 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-fiduciary-sustainability.html" class="text-reset">Fiduciary Duties in Sustainability & Energy Transition</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Practical guidelines for board directors to avert greenwashing litigation while maintaining investor confidence and audit trail defensibility.
+              </p>
+              <a href="blog-fiduciary-sustainability.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="cyber">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-cyber-sec-rule.jpg" alt="Cyber Compliance" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info small align-self-start mb-2">Cyber Risk</span>
+              <div class="small text-muted mb-2">August 18, 2026 &bull; 5 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-cybersecurity-sec.html" class="text-reset">Cybersecurity Incident Reporting: 4-Day SEC Rule Lessons</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Case studies and judicial interpretations regarding the legal definition of 'material incident' under recent SEC Form 8-K enforcement orders.
+              </p>
+              <a href="blog-cybersecurity-sec.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="sec">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-audit-committee.jpg" alt="Audit Committee" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning small align-self-start mb-2">SEC & Disclosure</span>
+              <div class="small text-muted mb-2">July 30, 2026 &bull; 7 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-modern-audit-committee.html" class="text-reset">The Modern Audit Committee: Beyond Financial Statement Sign-Off</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Why forward-looking audit committees are expanding oversight to non-financial risk registers, generative AI implementation, and third-party vendor risk.
+              </p>
+              <a href="blog-modern-audit-committee.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="ethics">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-whistleblower-trees.jpg" alt="Whistleblower" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-danger-subtle text-danger small align-self-start mb-2">Ethics & Whistleblower</span>
+              <div class="small text-muted mb-2">July 11, 2026 &bull; 9 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-whistleblower-escalation.html" class="text-reset">Designing High-Integrity Whistleblower Escalation Trees</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Examining the structural breakdowns that allow serious executive misconduct allegations to be buried before reaching the independent board chair.
+              </p>
+              <a href="blog-whistleblower-escalation.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="sec">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-proxy-advisors.jpg" alt="Proxy Advisory" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning small align-self-start mb-2">SEC & Disclosure</span>
+              <div class="small text-muted mb-2">June 25, 2026 &bull; 6 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-proxy-advisor-trends.html" class="text-reset">Proxy Advisor Trends: Preparing for the 2027 AGM Season</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Key voting policy shifts from ISS and Glass Lewis on executive compensation peer groups and multi-class voting share sunsets.
+              </p>
+              <a href="blog-proxy-advisor-trends.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="cyber">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-eu-ai-act.jpg" alt="AI Governance" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info small align-self-start mb-2">Cyber Risk</span>
+              <div class="small text-muted mb-2">June 04, 2026 &bull; 8 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-eu-ai-act-governance.html" class="text-reset">The EU AI Act: Immediate Corporate Governance Mandates</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Step-by-step compliance checklist for non-EU parent companies operating high-risk algorithmic models in European commercial subsidiaries.
+              </p>
+              <a href="blog-eu-ai-act-governance.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 7 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="sec">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-safe-harbors.jpg" alt="SEC Safe Harbors" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning small align-self-start mb-2">SEC & Disclosure</span>
+              <div class="small text-muted mb-2">May 19, 2026 &bull; 7 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-safe-harbors-disclosures.html" class="text-reset">Safe Harbors and Forward-Looking Disclosures in 2027</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Legal boundaries of the Private Securities Litigation Reform Act (PSLRA) safe harbor when issuing macroeconomic guidance under heightened volatility.
+              </p>
+              <a href="blog-safe-harbors-disclosures.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 8 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="ethics">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-doj-disclosure.jpg" alt="FCPA Compliance" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-danger-subtle text-danger small align-self-start mb-2">Ethics & Whistleblower</span>
+              <div class="small text-muted mb-2">May 02, 2026 &bull; 8 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-doj-self-disclosure.html" class="text-reset">DOJ Corporate Enforcement Policy: Self-Disclosure Strategy</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Navigating the delicate calculation between voluntary self-disclosure, clawback provisions, and cooperation credit under recent DOJ revisions.
+              </p>
+              <a href="blog-doj-self-disclosure.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 9 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="esg">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-esg-comp.jpg" alt="Board ESG Accountability" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-success-subtle text-success small align-self-start mb-2">ESG Governance</span>
+              <div class="small text-muted mb-2">April 14, 2026 &bull; 6 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-esg-executive-comp.html" class="text-reset">Executive Compensation Tied to ESG Metrics: A Legal Defense Guide</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Drafting defensible, auditable executive compensation covenants linked to sustainability KPIs to withstand shareholder derivative challenges.
+              </p>
+              <a href="blog-esg-executive-comp.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 10 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="cyber">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-board-cyber-literacy.jpg" alt="Board Cyber Literacy" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info small align-self-start mb-2">Cyber Risk</span>
+              <div class="small text-muted mb-2">March 28, 2026 &bull; 5 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-board-cyber-literacy.html" class="text-reset">Board-Level Cyber Literacy: Fulfilling Caremark Oversight Duties</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Why Delaware Chancery Court precedents are shifting towards evaluating director cyber technical competency following catastrophic breach lawsuits.
+              </p>
+              <a href="blog-board-cyber-literacy.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 11 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="sec">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-slc-committees.jpg" alt="Delaware Chancery Decisions" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning small align-self-start mb-2">SEC & Disclosure</span>
+              <div class="small text-muted mb-2">March 10, 2026 &bull; 9 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-special-litigation-committees.html" class="text-reset">Special Litigation Committees: Preserving Independent Authority</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Best practices for appointing and empowering Special Litigation Committees (SLC) to independently resolve shareholder derivative litigation demands.
+              </p>
+              <a href="blog-special-litigation-committees.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 12 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="ethics">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-cross-border-hotline.jpg" alt="Supply Chain Integrity" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-danger-subtle text-danger small align-self-start mb-2">Ethics & Whistleblower</span>
+              <div class="small text-muted mb-2">February 21, 2026 &bull; 7 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-cross-border-whistleblowers.html" class="text-reset">Cross-Border Whistleblower Protections: EU Directive vs. US SOX</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Harmonizing anonymous hotline channels for multinational employers navigating conflict between EU GDPR anonymity rules and US Sarbanes-Oxley mandates.
+              </p>
+              <a href="blog-cross-border-whistleblowers.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 13 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="sec">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/sec-clawback-enforcement.jpg" alt="SEC Clawback Policies" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning small align-self-start mb-2">SEC & Disclosure</span>
+              <div class="small text-muted mb-2">January 15, 2026 &bull; 7 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-sec-clawback-enforcement.html" class="text-reset">SEC Clawback Enforcement: Dodd-Frank Recoupment Strategy</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Auditing compensation committee guidelines to comply with mandatory no-fault recovery mandates following financial restatements.
+              </p>
+              <a href="blog-sec-clawback-enforcement.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 14 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="cyber">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/audit-compliance-ai.jpg" alt="Continuous Compliance" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info small align-self-start mb-2">Cyber Risk</span>
+              <div class="small text-muted mb-2">December 29, 2025 &bull; 6 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-continuous-compliance-ai.html" class="text-reset">Continuous Compliance Monitoring: AI in Internal Audits & SOX</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Integrating algorithmic audit agents into enterprise ERP stacks while maintaining PCAOB evidentiary workpaper standards.
+              </p>
+              <a href="blog-continuous-compliance-ai.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 15 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="ethics">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-sanctions-protocols.jpg" alt="Sanctions Compliance" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-danger-subtle text-danger small align-self-start mb-2">Ethics & Whistleblower</span>
+              <div class="small text-muted mb-2">November 18, 2025 &bull; 8 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-global-sanctions-investigation.html" class="text-reset">Global Sanctions Compliance & Internal Investigation Protocols</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Navigating OFAC enforcement trends and designing forensic review workplans when secondary sanctions trigger cross-border banking alerts.
+              </p>
+              <a href="blog-global-sanctions-investigation.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 16 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="esg">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/insight-scope3-emissions.jpg" alt="Scope 3 Emissions Supply Chain Due Diligence" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-success-subtle text-success small align-self-start mb-2">ESG Governance</span>
+              <div class="small text-muted mb-2">October 30, 2025 &bull; 5 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-scope3-supply-chain.html" class="text-reset">Scope 3 Emissions: Supply Chain Legal Due Diligence</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Contractual indemnity clauses and data verification safeguards to defend against greenwashing challenges under state consumer protection statutes.
+              </p>
+              <a href="blog-scope3-supply-chain.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 17 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="cyber">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/cloud-ransomware-defense.jpg" alt="Cloud Infrastructure Ransomware" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info small align-self-start mb-2">Cyber Risk</span>
+              <div class="small text-muted mb-2">October 12, 2025 &bull; 6 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-details.html" class="text-reset">Cloud Infrastructure Ransomware: Director Fiduciary Liability</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Analyzing liability exposure for corporate officers when operational backup architectures fail to mitigate enterprise-wide extortion demands.
+              </p>
+              <a href="blog-details.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 18 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="sec">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/board-nominating-defense.jpg" alt="Board Nominating Committees" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-warning-subtle text-warning small align-self-start mb-2">SEC & Disclosure</span>
+              <div class="small text-muted mb-2">September 14, 2025 &bull; 8 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-details.html" class="text-reset">Board Nominating Committees & Proxy Contest Defense</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Evaluating candidate independence, skills matrix disclosures, and universal proxy card readiness in contested director elections.
+              </p>
+              <a href="blog-details.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 19 (Cyber Risk - 6th Card filling empty space) -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="cyber">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/cyber-supply-chain-risk.jpg" alt="Third-Party IT Supply Chain Risk" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-info-subtle text-info small align-self-start mb-2">Cyber Risk</span>
+              <div class="small text-muted mb-2">September 08, 2025 &bull; 7 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-details.html" class="text-reset">Third-Party IT Supply Chain Risk: Board Defensibility After Outages</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Contractual indemnities, redundant failover architectures, and proactive vendor SLA monitoring protocols to protect enterprise boards against derivative liability in single-point-of-failure outages.
+              </p>
+              <a href="blog-details.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 20 (Ethics & Whistleblower - 5th Card) -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="ethics">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/ethics-workplace-inquiry.jpg" alt="Workplace Misconduct Inquiries" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-danger-subtle text-danger small align-self-start mb-2">Ethics & Whistleblower</span>
+              <div class="small text-muted mb-2">October 14, 2025 &bull; 7 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-workplace-inquiries.html" class="text-reset">Independent Workplace Misconduct Inquiries: Board Privilege & Defensibility</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Preserving attorney-client privilege and work-product doctrine during high-stakes C-suite workplace investigations conducted by special audit subcommittees.
+              </p>
+              <a href="blog-workplace-inquiries.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 21 (Ethics & Whistleblower - 6th Card filling empty space) -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-blog-category="ethics">
+          <article class="gov-card p-0 overflow-hidden h-100">
+            <img src="assets/images/ethics-fcpa-audit.jpg" alt="FCPA Third-Party Audits" class="w-100" style="height: 200px;">
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <span class="badge bg-danger-subtle text-danger small align-self-start mb-2">Ethics & Whistleblower</span>
+              <div class="small text-muted mb-2">August 26, 2025 &bull; 8 Min Read</div>
+              <h3 class="h5 fw-bold mb-2 article-title"><a href="blog-fcpa-third-party-audits.html" class="text-reset">Foreign Corrupt Practices Act (FCPA): Third-Party Intermediary Audits</a></h3>
+              <p class="small text-muted mb-3 flex-grow-1 article-excerpt">
+                Structuring defensible anti-corruption compliance warranties, localized forensic audit rights, and transaction monitoring across high-risk overseas distribution networks.
+              </p>
+              <a href="blog-fcpa-third-party-audits.html" class="gov-card-link mt-auto">Read Briefing <i class="bi bi-arrow-right icon-flip-rtl"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- No results state for search -->
+      <div id="blogNoResults" class="text-center py-5 d-none">
+        <div class="display-6 text-warning mb-3"><i class="bi bi-search"></i></div>
+        <h3 class="h5 fw-bold">No Briefings Match Your Search</h3>
+        <p class="text-muted small">Try refining your keyword query or reset category filter buttons above.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Global Footer -->
+  <footer class="gov-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4">
+          <a class="gov-brand mb-3 d-inline-flex" href="index.html">
+            <span class="gov-brand-icon"><i class="bi bi-shield-check"></i></span><span><span class="text-white">GOVERN</span><span class="gold">ORA</span></span>
+          </a>
+          <p class="text-secondary small mb-4">
+            Governora is an international corporate governance, regulatory compliance, and board advisory consulting practice. We safeguard enterprise reputation, ensure strict audit readiness, and optimize board effectiveness.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="gov-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Practices</h5>
+          <ul class="gov-footer-links">
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Board Evaluation</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Risk Management</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> SOX Compliance</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> Ethics & Conduct</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right small text-warning"></i> ESG Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Company</h5>
+          <ul class="gov-footer-links">
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-warning"></i> About Practice</a></li>
+            <li><a href="case-studies.html"><i class="bi bi-chevron-right small text-warning"></i> Client Engagements</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small text-warning"></i> Policy Insights</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small text-warning"></i> Advisory Packages</a></li>
+            <li><a href="coming-soon.html"><i class="bi bi-chevron-right small text-warning"></i> Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5 class="footer-title">Regulatory Bulletin</h5>
+          <p class="text-secondary small mb-3">Subscribe to our monthly global compliance and fiduciary duty brief.</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-2">
+              <input type="email" class="form-control gov-form-control" placeholder="corporate@email.com" required aria-label="Corporate Email">
+              <button class="btn btn-gov-primary" type="submit"><i class="bi bi-send"></i></button>
+            </div>
+            <div class="newsletter-feedback"></div>
+          </form>
+          <div class="small text-secondary mt-3">
+            <i class="bi bi-shield-lock-fill text-warning me-1"></i> Strictly confidential. No unsolicited contact.
+          </div>
+        </div>
+      </div>
+
+      <div class="gov-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Governora Advisory Partners LLP. All rights reserved. Premium enterprise template.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-secondary small text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-secondary small text-decoration-none">Terms of Engagement</a>
+          <a href="404.html" class="text-secondary small text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="gov-back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Core Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+</body>
+</html>

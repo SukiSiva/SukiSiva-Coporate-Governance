@@ -1,0 +1,530 @@
+/* ==========================================================================
+   GOVERNORA - Enterprise Responsive Architecture & Mobile View Engine
+   (responsive.css - Mobile First & Adaptive Breakpoints)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL RESPONSIVE GUARDS & FLUID RESIZING
+   -------------------------------------------------------------------------- */
+html, body {
+  overflow-x: clip;
+  max-width: 100vw;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.gov-map-frame,
+#contactMapIframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  display: block !important;
+}
+
+/* Ensure no container or section exceeds mobile viewport */
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-inline: clamp(1rem, 4vw, 1.5rem);
+}
+
+/* --------------------------------------------------------------------------
+   2. MOBILE NAVIGATION & DRAWER SYSTEM (< 992px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  /* Navbar Container */
+  .gov-navbar {
+    padding-block: 0.75rem;
+  }
+
+  .gov-navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Hamburger toggler custom look */
+  .navbar-toggler {
+    padding: 0.45rem 0.65rem;
+    font-size: 1.25rem;
+    border-radius: var(--gov-radius-sm);
+    background-color: var(--gov-bg-surface);
+    border: 1px solid var(--gov-border) !important;
+    color: var(--gov-heading);
+    transition: var(--gov-transition);
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px var(--gov-accent-light) !important;
+    outline: none;
+  }
+
+  /* Mobile Dropdown Collapsible Drawer */
+  .gov-navbar .navbar-collapse {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box !important;
+    margin-top: 0.85rem;
+    padding: 1.25rem;
+    border-radius: var(--gov-radius-md);
+    background-color: var(--gov-bg-card);
+    border: 1px solid var(--gov-border);
+    box-shadow: var(--gov-shadow-lg);
+    transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  }
+
+  .gov-navbar .navbar-collapse.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  [data-bs-theme="dark"] .gov-navbar .navbar-collapse,
+  body.dark-mode .gov-navbar .navbar-collapse {
+    background-color: #0F1A2D;
+    border-color: #1E2F4D;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+  }
+
+  .gov-navbar .navbar-nav {
+    gap: 0.25rem;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .gov-navbar .nav-link {
+    padding: 0.75rem 1rem !important;
+    border-radius: var(--gov-radius-sm);
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  /* In mobile drawer, underline is replaced with clean pill background highlight */
+  .gov-navbar .nav-link::after {
+    display: none !important;
+  }
+
+  .gov-navbar .nav-link:hover,
+  .gov-navbar .nav-link.active,
+  html[dir="ltr"] .gov-navbar .nav-link:hover,
+  html[dir="ltr"] .gov-navbar .nav-link.active,
+  html:not([dir="rtl"]) .gov-navbar .nav-link:hover,
+  html:not([dir="rtl"]) .gov-navbar .nav-link.active {
+    background-color: var(--gov-accent-light) !important;
+    color: var(--gov-accent) !important;
+    transform: translateX(4px) !important;
+  }
+
+  [dir="rtl"] .gov-navbar .nav-link:hover,
+  [dir="rtl"] .gov-navbar .nav-link.active {
+    transform: translateX(-4px) !important;
+  }
+
+  /* Dropdown items inside mobile collapse */
+  .gov-navbar .dropdown-menu {
+    border: none !important;
+    box-shadow: none !important;
+    background: var(--gov-bg-surface) !important;
+    margin-top: 0.35rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: var(--gov-radius-sm);
+    position: static !important;
+    float: none !important;
+    transform: none !important;
+  }
+
+  .gov-navbar .dropdown-menu.show {
+    display: block !important;
+  }
+
+  [data-bs-theme="dark"] .gov-navbar .dropdown-menu,
+  body.dark-mode .gov-navbar .dropdown-menu {
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+
+  .gov-navbar .dropdown-item {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.92rem;
+  }
+
+  .gov-navbar .d-flex.align-items-center.gap-2 {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0.5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.25rem !important;
+    border-top: 1px solid var(--gov-border);
+    box-sizing: border-box !important;
+  }
+
+  .gov-navbar .d-flex.align-items-center.gap-2 .gov-tool-btn {
+    flex-shrink: 0 !important;
+  }
+
+  [data-bs-theme="dark"] .gov-navbar .d-flex.align-items-center.gap-2,
+  body.dark-mode .gov-navbar .d-flex.align-items-center.gap-2 {
+    border-top-color: #1E2F4D;
+  }
+
+  .gov-navbar .d-flex.align-items-center.gap-2 .btn-gov-primary {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.4rem !important;
+    text-align: center;
+    white-space: nowrap !important;
+    padding: 0 0.85rem !important;
+    height: 38px !important;
+    font-size: 0.84rem !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    border-radius: var(--gov-radius-sm);
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .gov-navbar .d-flex.align-items-center.gap-2 .btn-gov-primary span {
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+  }
+
+  .gov-navbar .d-flex.align-items-center.gap-2 .btn-gov-primary i {
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  /* Hero Headings on Tablet / Mobile */
+  .hero-headline {
+    font-size: clamp(2.1rem, 5vw, 3rem) !important;
+    line-height: 1.18;
+  }
+
+  .section-title {
+    font-size: clamp(1.85rem, 4vw, 2.35rem) !important;
+    line-height: 1.22;
+  }
+
+  /* Grid Stack Spacings */
+  .gov-card {
+    padding: 1.5rem;
+  }
+
+  /* Stat items responsive stack */
+  .gov-stat-item {
+    padding: 1.25rem 0.75rem;
+    border-inline-end: none !important;
+    border-bottom: 1px solid var(--gov-border);
+  }
+
+  .gov-stat-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .gov-stat-number {
+    font-size: 2.3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. MOBILE PHONES & SMALL SCREENS (< 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  /* Body typography fluid scale */
+  body {
+    font-size: 0.95rem;
+  }
+
+  /* Section vertical paddings */
+  section.py-5 {
+    padding-top: 2.75rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  section.my-md-4,
+  section.my-md-5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Brand Logo & Icon sizing */
+  .gov-brand {
+    font-size: 1.35rem;
+    gap: 0.5rem;
+  }
+
+  .gov-brand-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  /* Buttons Full Width on small phones if in stacked containers */
+  .d-flex.flex-wrap.gap-3:not(.header-badges) > .btn {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Hero Cards & Floating badges */
+  .hero-badge-floating {
+    position: static !important;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+  }
+
+  .hero-image-frame {
+    margin-top: 1rem;
+  }
+
+  /* Form controls touch friendly */
+  .form-control,
+  .form-select,
+  .gov-form-control,
+  .btn {
+    min-height: 46px;
+    font-size: 0.95rem;
+  }
+
+  /* Stat counter items in 2 columns */
+  .gov-stat-item {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .gov-stat-number {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    line-height: 1.1;
+  }
+
+  .gov-stat-label {
+    font-size: 0.76rem !important;
+    line-height: 1.3;
+    max-width: 140px;
+  }
+
+  /* Tables Fluid Scroll Wrapper */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--gov-radius-sm);
+  }
+
+  /* Breadcrumbs wrap nicely */
+  .breadcrumb {
+    font-size: 0.82rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Modal & Offcanvas fit viewport */
+  .modal-dialog {
+    margin: 0.75rem;
+  }
+
+  /* Filter pill tabs scroll horizontally without breaking */
+  .nav-pills.filter-pills,
+  .gov-filter-group {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .nav-pills.filter-pills::-webkit-scrollbar,
+  .gov-filter-group::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  .nav-pills.filter-pills::-webkit-scrollbar-thumb,
+  .gov-filter-group::-webkit-scrollbar-thumb {
+    background: var(--gov-accent);
+  }
+
+  .nav-pills.filter-pills .nav-link,
+  .gov-filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Back to Top floating button position on mobile */
+  .gov-back-to-top,
+  html[dir="ltr"] .gov-back-to-top,
+  html:not([dir="rtl"]) .gov-back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem !important;
+    left: auto !important;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  [dir="rtl"] .gov-back-to-top {
+    right: auto !important;
+    left: 1.25rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. ULTRA-SMALL SCREENS (320px - 380px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 380px) {
+  .hero-headline {
+    font-size: 1.8rem !important;
+  }
+
+  .section-title {
+    font-size: 1.55rem !important;
+  }
+
+  .gov-brand {
+    font-size: 1.2rem;
+  }
+
+  .gov-brand-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .btn-gov-primary,
+  .btn-gov-outline,
+  .btn-gov-dark {
+    padding: 0.65rem 1rem;
+    font-size: 0.88rem;
+  }
+
+  .gov-card {
+    padding: 1.15rem;
+  }
+
+  .gov-card-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4b. MOBILE ANIMATION GUARDS & ALIGNMENT PERFECTION (< 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  /* Prevent horizontal animation transform overflow */
+  .gov-reveal-left,
+  .gov-reveal-right {
+    transform: translateY(12px) !important;
+  }
+
+  .gov-reveal-left.is-revealed,
+  .gov-reveal-right.is-revealed,
+  .gov-reveal.is-revealed,
+  .gov-reveal-scale.is-revealed {
+    transform: translate(0, 0) scale(1) !important;
+    opacity: 1 !important;
+  }
+
+  /* Optimize touch responsiveness and eliminate hover lag on mobile devices */
+  .gov-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .gov-card:hover img {
+    transform: scale(1.02);
+  }
+
+  /* Align small trust badges in hero cleanly across mobile */
+  .hero-wrapper .d-flex.align-items-center.gap-4 {
+    flex-wrap: wrap !important;
+    gap: 0.75rem 1.25rem !important;
+  }
+
+  /* Center headers and tags if on single-column mobile viewports */
+  .section-tag {
+    display: inline-block;
+  }
+
+  /* Full-bleed responsive images inside cards */
+  .gov-card img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. TABLET RANGE (768px - 1024px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-headline {
+    font-size: 2.6rem;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .gov-card {
+    padding: 1.75rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. PRINT STYLES
+   -------------------------------------------------------------------------- */
+@media print {
+  .gov-navbar,
+  .gov-topbar,
+  .gov-cookie-banner,
+  .gov-back-to-top,
+  .btn-gov-primary,
+  .btn-gov-outline,
+  .gov-reveal,
+  .gov-reveal-left,
+  .gov-reveal-right,
+  .gov-reveal-scale {
+    display: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}
