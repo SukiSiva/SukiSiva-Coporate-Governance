@@ -971,10 +971,60 @@ body.dark-mode .badge.bg-secondary-subtle {
     text-overflow: ellipsis;
   }
 }
+/* Case Studies Grid (Case Studies Page) Symmetrical Alignment */
+#caseStudiesGrid > [class*="col-"] {
+  display: flex;
+}
 
-#caseStudiesGrid .gov-card h3 {
-  min-height: 3.1rem;
-  line-height: 1.3;
+#caseStudiesGrid > [class*="col-"] > .gov-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#caseStudiesGrid .case-card-title {
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+#caseStudiesGrid .case-card-challenge {
+  line-height: 1.5;
+  color: var(--gov-text-muted);
+}
+
+#caseStudiesGrid .case-card-solution {
+  line-height: 1.5;
+  color: var(--gov-text-muted);
+}
+
+#caseStudiesGrid .case-card-outcome {
+  border-color: var(--gov-border) !important;
+  background-color: var(--gov-bg-surface);
+  line-height: 1.45;
+}
+
+@media (min-width: 768px) {
+  #caseStudiesGrid .case-card-title,
+  #caseStudiesGrid .gov-card h3 {
+    height: 3.25rem;
+    min-height: 3.25rem;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #caseStudiesGrid .case-card-challenge {
+    min-height: 4.25rem;
+  }
+
+  #caseStudiesGrid .case-card-solution {
+    min-height: 4.25rem;
+  }
+
+  #caseStudiesGrid .case-card-outcome {
+    min-height: 4.85rem;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Pillar Cards (About Page) Symmetry & Horizontal Alignment */
