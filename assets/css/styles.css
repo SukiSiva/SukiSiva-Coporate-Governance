@@ -930,6 +930,44 @@ body.dark-mode .text-indigo {
   color: #A5B4FC !important;
 }
 
+.border-purple-subtle {
+  border-color: rgba(124, 58, 237, 0.22) !important;
+}
+
+[data-bs-theme="dark"] .border-purple-subtle,
+body.dark-mode .border-purple-subtle {
+  border-color: rgba(167, 139, 250, 0.28) !important;
+}
+
+.border-indigo-subtle {
+  border-color: rgba(79, 70, 229, 0.22) !important;
+}
+
+[data-bs-theme="dark"] .border-indigo-subtle,
+body.dark-mode .border-indigo-subtle {
+  border-color: rgba(129, 140, 248, 0.28) !important;
+}
+
+.badge.bg-warning-subtle {
+  background-color: rgba(217, 119, 6, 0.12) !important;
+  color: #B45309 !important;
+  border-color: rgba(217, 119, 6, 0.25) !important;
+}
+
+.badge.bg-warning-subtle.text-warning {
+  color: #B45309 !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-warning-subtle {
+  background-color: rgba(245, 158, 11, 0.18) !important;
+  color: #FCD34D !important;
+  border-color: rgba(245, 158, 11, 0.3) !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-warning-subtle.text-warning {
+  color: #FCD34D !important;
+}
+
 .section-tag {
   color: var(--gov-accent);
   font-weight: 600;
