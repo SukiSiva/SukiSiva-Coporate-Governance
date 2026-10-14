@@ -1105,6 +1105,42 @@ body.dark-mode .badge.bg-secondary-subtle {
   }
 }
 
+/* Advisory Engagement Roadmap Cards (Pricing Page) Alignment & Symmetry */
+.roadmap-step-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--gov-transition);
+}
+
+.roadmap-step-title {
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.roadmap-step-desc {
+  line-height: 1.5;
+  color: var(--gov-text-muted);
+}
+
+.roadmap-step-footer {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .roadmap-step-title {
+    height: 3.25rem;
+    min-height: 3.25rem;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .roadmap-step-desc {
+    min-height: 7.5rem;
+  }
+}
+
 /* Pillar Cards (About Page) Symmetry & Horizontal Alignment */
 @media (min-width: 992px) {
   .pillar-card-header {
