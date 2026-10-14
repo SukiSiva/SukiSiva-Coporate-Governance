@@ -1029,6 +1029,29 @@ body.dark-mode .badge.bg-secondary-subtle {
   }
 }
 
+/* Case Study Detail Pages Blueprint Steps & Metric Alignment */
+.case-step-title {
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.case-step-desc {
+  line-height: 1.5;
+  color: var(--gov-text-muted);
+}
+
+@media (min-width: 768px) {
+  .case-step-title {
+    min-height: 2.6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .case-step-desc {
+    min-height: 3.5rem;
+  }
+}
+
 /* Pillar Cards (About Page) Symmetry & Horizontal Alignment */
 @media (min-width: 992px) {
   .pillar-card-header {
