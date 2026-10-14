@@ -880,6 +880,56 @@ body.dark-mode .badge.bg-secondary-subtle {
   color: #CBD5E1 !important;
 }
 
+.badge.bg-purple-subtle,
+.badge-purple {
+  background-color: rgba(124, 58, 237, 0.12) !important;
+  color: #6D28D9 !important;
+  border: 1px solid rgba(124, 58, 237, 0.22) !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-purple-subtle,
+body.dark-mode .badge.bg-purple-subtle,
+[data-bs-theme="dark"] .badge-purple,
+body.dark-mode .badge-purple {
+  background-color: rgba(167, 139, 250, 0.16) !important;
+  color: #C4B5FD !important;
+  border-color: rgba(167, 139, 250, 0.28) !important;
+}
+
+.text-purple {
+  color: #6D28D9 !important;
+}
+
+[data-bs-theme="dark"] .text-purple,
+body.dark-mode .text-purple {
+  color: #C4B5FD !important;
+}
+
+.badge.bg-indigo-subtle,
+.badge-indigo {
+  background-color: rgba(79, 70, 229, 0.12) !important;
+  color: #4338CA !important;
+  border: 1px solid rgba(79, 70, 229, 0.22) !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-indigo-subtle,
+body.dark-mode .badge.bg-indigo-subtle,
+[data-bs-theme="dark"] .badge-indigo,
+body.dark-mode .badge-indigo {
+  background-color: rgba(129, 140, 248, 0.16) !important;
+  color: #A5B4FC !important;
+  border-color: rgba(129, 140, 248, 0.28) !important;
+}
+
+.text-indigo {
+  color: #4338CA !important;
+}
+
+[data-bs-theme="dark"] .text-indigo,
+body.dark-mode .text-indigo {
+  color: #A5B4FC !important;
+}
+
 .section-tag {
   color: var(--gov-accent);
   font-weight: 600;
