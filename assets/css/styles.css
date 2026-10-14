@@ -1550,6 +1550,9 @@ aside.col-lg-4,
   position: relative;
   box-shadow: var(--gov-shadow-sm);
   transition: var(--gov-transition);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .gov-testimonial-card:hover {
@@ -1560,7 +1563,7 @@ aside.col-lg-4,
 
 .gov-quote-icon {
   color: var(--gov-accent);
-  opacity: 0.35;
+  opacity: 0.45;
   font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 1rem;
@@ -1571,12 +1574,20 @@ aside.col-lg-4,
   font-style: italic;
   color: var(--gov-text);
   margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+@media (min-width: 992px) {
+  .gov-testimonial-text {
+    min-height: 6.75rem;
+  }
 }
 
 .gov-testimonial-author {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: auto;
 }
 
 .gov-testimonial-avatar {
