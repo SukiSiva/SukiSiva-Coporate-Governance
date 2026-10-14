@@ -1001,6 +1001,7 @@ body.dark-mode .badge.bg-secondary-subtle {
   border-color: var(--gov-border) !important;
   background-color: var(--gov-bg-surface);
   line-height: 1.45;
+  margin-top: auto !important;
 }
 
 @media (min-width: 768px) {
@@ -1013,15 +1014,16 @@ body.dark-mode .badge.bg-secondary-subtle {
   }
 
   #caseStudiesGrid .case-card-challenge {
-    min-height: 4.25rem;
+    min-height: 5.25rem;
   }
 
   #caseStudiesGrid .case-card-solution {
-    min-height: 4.25rem;
+    min-height: 5.25rem;
   }
 
   #caseStudiesGrid .case-card-outcome {
-    min-height: 4.85rem;
+    height: 5.85rem;
+    min-height: 5.85rem;
     display: flex;
     align-items: center;
   }
