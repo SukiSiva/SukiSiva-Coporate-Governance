@@ -11,13 +11,16 @@
     const navbar = document.querySelector('.gov-navbar');
     if (!navbar) return;
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
+    const onScroll = () => {
+      if (window.scrollY > 15) {
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
       }
-    });
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   }
 
   // 2. Back-to-Top Button

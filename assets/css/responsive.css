@@ -7,7 +7,7 @@
    1. GLOBAL RESPONSIVE GUARDS & FLUID RESIZING
    -------------------------------------------------------------------------- */
 html, body {
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
   width: 100%;
   -webkit-text-size-adjust: 100%;
@@ -60,9 +60,17 @@ iframe {
    2. MOBILE NAVIGATION & DRAWER SYSTEM (< 992px)
    -------------------------------------------------------------------------- */
 @media (max-width: 991.98px) {
-  /* Navbar Container */
-  .gov-navbar {
-    padding-block: 0.75rem;
+  /* Navbar Container - Sticky on Tablet & Mobile */
+  .gov-navbar,
+  nav.gov-navbar {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1050 !important;
+    padding-block: 0.65rem;
   }
 
   .gov-navbar .container {
@@ -100,6 +108,9 @@ iframe {
     background-color: var(--gov-bg-card);
     border: 1px solid var(--gov-border);
     box-shadow: var(--gov-shadow-lg);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
   }
 
